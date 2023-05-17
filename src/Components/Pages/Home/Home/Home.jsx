@@ -83,7 +83,24 @@ const Home = () => {
   </div>
 </div>
             </div>
-            
+
+           <div className='mt-40'>
+            <h1 className='text-center'><span className='text-5xl font-bold me-2'style={{color:"hotpink"}}>Our</span> <span className='text-5xl font-bold'style={{color:"skyblue"}}>Gallery</span></h1>
+            <div className='grid grid-cols-1 md:grid-cols-3 h-full my-10'>
+                <img src="https://img.freepik.com/premium-photo/funny-illustrated-car-painted-rainbow-colors_183364-23794.jpg?size=626&ext=jpg&ga=GA1.2.1636033582.1682966548&semt=ais "className='h-56 w-full' alt="toys" />
+                <img src="https://img.freepik.com/free-photo/closeup-shot-small-toy-car-wooden-train-track_181624-32510.jpg?size=626&ext=jpg&ga=GA1.2.1636033582.1682966548&semt=ais"className='h-56 w-full' alt="toys" />
+                <img src="https://img.freepik.com/free-vector/cartoon-bumper-car-white-background_1308-107382.jpg?size=626&ext=jpg&ga=GA1.1.1636033582.1682966548&semt=ais" className='h-56 w-full' alt="toys" />
+                <img src="https://img.freepik.com/free-photo/closeup-shot-toy-red-wooden-train-wooden-table_181624-21684.jpg?size=626&ext=jpg&ga=GA1.2.1636033582.1682966548&semt=ais"className='h-56 w-full' alt="toys" />
+                <img src="https://img.freepik.com/free-photo/set-children-toys_93675-130361.jpg?size=626&ext=jpg&ga=GA1.1.1636033582.1682966548&semt=ais"className='h-56 w-full' alt="toys" />
+                <img src="https://img.freepik.com/free-photo/close-up-small-cars-model-road-traffic-conception_1150-20152.jpg?size=626&ext=jpg&ga=GA1.1.1636033582.1682966548&semt=ais"className='h-56 w-full' alt="toys" />
+                <img src="https://img.freepik.com/premium-photo/child-bike_540486-1074.jpg?size=626&ext=jpg&ga=GA1.1.1636033582.1682966548&semt=ais"className='h-56 w-full' alt="toys" />
+               <img src="https://img.freepik.com/premium-photo/3d-rendering-multicolored-tricycle-white-background-with-space-text-vehicle_187882-3060.jpg?size=626&ext=jpg&ga=GA1.1.1636033582.1682966548&semt=ais"className='h-56 w-full' alt="toys" />
+               <img src="https://img.freepik.com/free-photo/toy-bus-orange-background_23-2148169783.jpg?size=626&ext=jpg&ga=GA1.2.1636033582.1682966548&semt=ais"className='h-56 w-full' alt="toys" />
+            </div>
+            </div>
+            <div className='mt-40'>
+            <h1 className='text-center'><span className='text-4xl font-bold me-3'style={{color:"skyblue"}}>Shop</span><span className='font-bold' style={{color:"hotpink"}}>by</span> <span className='text-4xl font-bold ms-2'style={{color:"skyblue"}}>Category</span></h1>
+            </div>
         </div>
     );
 };
