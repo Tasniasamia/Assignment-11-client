@@ -21,7 +21,7 @@ const Header = () => {
             {navitem}
             </ul>
           </div>
-          <a className="btn btn-ghost normal-case text-xl"><span style={{color:"skyblue"}}>Toy</span><span style={{color:"hotpink"}}>Man</span></a>
+          <a className="btn btn-ghost normal-case text-xl"><i className="fa-solid fa-truck-pickup"style={{color:"hotpink"}}></i><span style={{color:"skyblue"}}>Toy</span><span style={{color:"hotpink"}}>Man</span></a>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
@@ -29,7 +29,7 @@ const Header = () => {
           </ul>
         </div>
         <div className="navbar-end">
-          <a className="btn">Login</a>
+          <a className="btn  text-white border-0"style={{background:"hotpink"}}>Login</a>
         </div>
       </div>
     );
