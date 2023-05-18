@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './Home.css';
 import Tabcomponents from './Tab/Tab';
+import Aboutus from '../../Shared/AboutUs/Aboutus';
 
 const Home = () => {
     
@@ -39,7 +40,7 @@ const Home = () => {
       <div className="carousel-caption  d-md-block">
       <div className='my-5 d-flex justify-content-center align-items-center'>
     <div>
-        <h5 style={{fontSize:"60px",fontWeight:"bold",color:"skyblue"}}>Toys Kids</h5>
+        <h5 style={{fontSize:"60px",fontWeight:"bold",color:"skyblue"}}>Toys Kid</h5>
         <div className=' d-none d-md-block'>
             {/* <img src="https://img.freepik.com/premium-photo/little-boy-buying-bicycle-kids-store_266732-7143.jpg" alt="toyshop"className='my-3 'style={{height:"300px",width:"300px"}} /> */}
             <p style={{fontSize:"25px",color:"hotpink"}}className='my-4'>They are typically made of plastic, metal, or a combination of materials and often feature intricate details to resemble real cars.Car toys are miniature replicas or models of automobiles, designed for play and entertainment purposes.Car toys are miniature replicas or models of automobiles, designed for play and entertainment purposes. They are typically made of plastic, metal, or a combination of materials and often feature intricate details to resemble real cars. Car toys come in various sizes, ranging from small matchbox-sized vehicles to larger, more detailed models. They are popular among children and collectors alike, allowing them to imagine driving and explore different types of cars, such as sports cars, off-road vehicles, vintage cars, and more. Car toys may also include additional features such as movable parts,</p>
@@ -53,7 +54,7 @@ const Home = () => {
       <div className="carousel-caption  d-md-block">
       <div className='my-5 d-flex justify-content-center align-items-center'>
     <div>
-        <h5 style={{fontSize:"60px",fontWeight:"bold",color:"skyblue"}}>Toys Play</h5>
+        <h5 style={{fontSize:"60px",fontWeight:"bold",color:"skyblue"}}>Toys Car</h5>
         <div className=' d-none d-md-block'>
             {/* <img src="https://img.freepik.com/premium-photo/little-boy-buying-bicycle-kids-store_266732-7143.jpg" alt="toyshop"className='my-3 'style={{height:"300px",width:"300px"}} /> */}
             <p style={{fontSize:"25px",color:"hotpink"}}className='my-4'>They are typically made of plastic, metal, or a combination of materials and often feature intricate details to resemble real cars.Car toys are miniature replicas or models of automobiles, designed for play and entertainment purposes.Car toys are miniature replicas or models of automobiles, designed for play and entertainment purposes. They are typically made of plastic, metal, or a combination of materials and often feature intricate details to resemble real cars. Car toys come in various sizes, ranging from small matchbox-sized vehicles to larger, more detailed models. They are popular among children and collectors alike, allowing them to imagine driving and explore different types of cars, such as sports cars, off-road vehicles, vintage cars, and more. Car toys may also include additional features such as movable parts,</p>
@@ -74,43 +75,90 @@ const Home = () => {
 </div>
 
 
+<div className='container'style={{marginTop:"200px"}}>
+    <h1 className='text-center'><span className='me-2'style={{color:"hotpink"}}>About</span><span style={{color:"skyblue"}}>Us</span> </h1>
+
+
+<Aboutus></Aboutus>
+</div>
                  {/* Gallery */}
 
 <div className='container'style={{marginTop:"200px"}}>
     <h1 className='text-center'><span className='me-2'style={{color:"hotpink"}}>Our</span><span style={{color:"skyblue"}}>Gallery</span> </h1>
                  <div className='row row-cols-1 row-cols-md-3 p-5 text-white  '>
-                <div className='col'style={{border:"1px solid skyblue"}}>
-                <img src="https://img.freepik.com/premium-photo/funny-illustrated-car-painted-rainbow-colors_183364-23794.jpg?size=626&ext=jpg&ga=GA1.2.1636033582.1682966548&semt=ais "className='w-full img-fluid' alt="toys" />
+                <div className='col  h-100 my-2'>
+                <img src="https://img.freepik.com/free-photo/father-son-playing-with-toy-cars_23-2148500801.jpg?size=626&ext=jpg&ga=GA1.1.1636033582.1682966548&semt=ais "className=' img-fluid'style={{height:"300px",width:"300px"}} alt="toys" />
                 </div>
-                <div className='col 'style={{border:"1px solid skyblue"}}>
-                <img src="https://img.freepik.com/free-vector/hand-drawn-tricycle-illustration_23-2149726600.jpg?size=626&ext=jpg&ga=GA1.2.1636033582.1682966548&semt=ais"className='w-full img-fluid' alt="toys" />   
+                <div className='col  h-100 my-2'>
+                <img src="https://img.freepik.com/free-photo/surprised-woman-holding-red-car_1187-1196.jpg?size=626&ext=jpg&ga=GA1.1.1636033582.1682966548&semt=ais"className=' img-fluid'style={{height:"300px",width:"300px"}} alt="toys" />   
                 </div>
-                <div className='col w-full'style={{border:"1px solid skyblue"}}>
-                <img src="https://img.freepik.com/free-vector/cartoon-bumper-car-white-background_1308-107382.jpg?size=626&ext=jpg&ga=GA1.1.1636033582.1682966548&semt=ais"className=' img-fluid' alt="toys" />
+                <div className='col  h-100 my-2'>
+                <img src="https://img.freepik.com/premium-photo/little-boy-buying-bicycle-kids-store_266732-7143.jpg?size=626&ext=jpg&ga=GA1.1.1636033582.1682966548&semt=ais"className=' img-fluid'style={{height:"300px",width:"300px"}} alt="toys" />   
                 </div>
 
-                <div className='col w-full'style={{border:"1px solid skyblue"}}>
-                <img src="https://img.freepik.com/premium-photo/3d-rendering-multicolored-tricycle-white-background-with-space-text-vehicle_187882-3060.jpg?size=626&ext=jpg&ga=GA1.1.1636033582.1682966548&semt=ais"className='w-full img-fluid' alt="toys" />
+                <div className='col  h-100 my-2'>
+                <img src="https://img.freepik.com/free-photo/front-view-kid-playing-with-ecological-toys_23-2149884344.jpg?size=626&ext=jpg&ga=GA1.1.1636033582.1682966548&semt=ais"className=' img-fluid'style={{height:"300px",width:"300px"}} alt="toys" />   
                 </div>
-                <div className='col'style={{border:"1px solid skyblue"}}>
-                <img src="https://img.freepik.com/free-vector/motocross-racer-cartoon-white-background_1308-112810.jpg?size=626&ext=jpg&ga=GA1.2.1636033582.1682966548&semt=ais"className=' img-fluid' alt="toys" />
+                <div className='col  h-100 my-2'>
+                <img src="https://img.freepik.com/premium-photo/playground-sport-play-kindergarten_550617-75367.jpg?size=626&ext=jpg&ga=GA1.1.1636033582.1682966548&semt=ais"className=' img-fluid'style={{height:"300px",width:"300px"}} alt="toys" />   
                 </div>
-                <div className='col'style={{border:"1px solid skyblue"}}>
-                <img src="https://img.freepik.com/free-vector/vector-yellow-dump-truck-unloading-side-view-illustration-isolated-white-background_8130-972.jpg?size=626&ext=jpg&ga=GA1.2.1636033582.1682966548&semt=sph"className='img-fluid'  alt="toys" />
+                <div className='col  h-100 my-2'>
+                <img src="https://img.freepik.com/free-photo/colorful-car-toys_1194-2341.jpg?size=626&ext=jpg&ga=GA1.2.1636033582.1682966548&semt=ais"className=' img-fluid'style={{height:"300px",width:"300px"}} alt="toys" />   
                 </div>
-                <div className='col'style={{border:"1px solid skyblue"}}>
-                <img src="https://img.freepik.com/free-vector/tow-truck-carrying-road-roller_1308-54900.jpg?size=626&ext=jpg&ga=GA1.2.1636033582.1682966548&semt=sph"className="img-fluid" alt="toys" />
-                </div>
-                <div className='col'style={{border:"1px solid skyblue"}}>
-                <img src="https://img.freepik.com/free-vector/hand-drawn-transport-truck_23-2149166246.jpg?size=626&ext=jpg&ga=GA1.1.1636033582.1682966548&semt=sph"className="img-fluid" alt="toys" />
-                </div>
-                <div className='col'style={{border:"1px solid skyblue"}}>
-                <img src="https://img.freepik.com/premium-photo/yellow-bus-toy-isolated-white-background_650468-256.jpg?size=626&ext=jpg&ga=GA1.1.1636033582.1682966548&semt=ais"className="img-fluid" alt="toys" />
-                </div>
+               
+               
             </div>
+               {/* latest news */}
+
+            <div className='container'style={{marginTop:"200px"}}>
+    <h1 className='text-center'><span className='me-2'style={{color:"hotpink"}}>Latest</span><span style={{color:"skyblue"}}>News</span> </h1>
 
 
 
+
+    <div className="row row-cols-1 row-cols-md-3 g-4"style={{marginTop:"70px"}}>
+  <div className="col">
+    <div className="card h-100">
+      <img src="https://img.freepik.com/premium-photo/funny-illustrated-car-painted-rainbow-colors_183364-23794.jpg?size=626&ext=jpg&ga=GA1.2.1636033582.1682966548&semt=ais"style={{height:"200px"}} className="card-img-top" alt="cardimg"/>
+      <div className="card-body my-3">
+        <h4 className="card-title text-center"style={{color:"hotpink"}}>Best Sellers</h4>
+        
+      </div>
+    </div>
+  </div>
+  <div className="col">
+    <div className="card h-100">
+      <img src="https://img.freepik.com/free-vector/tow-truck-carrying-road-roller_1308-54900.jpg?size=626&ext=jpg&ga=GA1.2.1636033582.1682966548&semt=sph"style={{height:"200px"}} className="card-img-top" alt="cardimg"/>
+      <div className="card-body my-3">
+        <h4 className="card-title text-center"style={{color:"hotpink"}}>Featured</h4>
+     
+
+       
+      </div>
+    </div>
+  </div>
+  <div className="col">
+    <div className="card h-100">
+      <img src="https://img.freepik.com/free-vector/vector-yellow-dump-truck-unloading-side-view-illustration-isolated-white-background_8130-972.jpg?size=626&ext=jpg&ga=GA1.2.1636033582.1682966548&semt=sph"style={{height:"200px"}} className="card-img-top" alt="cardimg"/>
+      <div className="card-body my-3">
+        <h4 className="card-title text-center"style={{color:"hotpink"}}>New Arrival</h4>
+
+      
+      </div>
+    </div>
+  </div>
+  <div className="col">
+    <div className="card h-100">
+      <img src="https://img.freepik.com/free-vector/hand-drawn-transport-truck_23-2149166246.jpg?size=626&ext=jpg&ga=GA1.1.1636033582.1682966548&semt=sph"style={{height:"200px"}} className="card-img-top" alt="cardimg"/>
+      <div className="card-body my-3">
+        <h4 className="card-title text-center"style={{color:"hotpink"}}>Featured</h4>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
 
 
             </div>

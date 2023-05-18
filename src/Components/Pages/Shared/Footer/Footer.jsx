@@ -3,7 +3,7 @@ import './Footer.css';
 const Footer = () => {
     return (
         <div>
-           <div style={{background:"#f9f9f9"}}className='mx-auto '>
+           <div style={{background:"#f9f9f9",marginTop:"300px"}}className='mx-auto '>
             <div className='row row-cols-1 row-cols-md-5 g-4 p-5 text-white   '>
                 <div className='col'>
                     <div style={{fontSize:"35px",fontWeight:"bold"}}><i className="fa-solid fa-car-side"style={{color:"hotpink"}}></i><span style={{color:"skyblue"}}>Toy</span><span style={{color:"hotpink"}}>Man</span></div>
@@ -45,8 +45,8 @@ const Footer = () => {
 
                 </div>
             </div>
-            <hr style={{color:"black",border:"1px solid black"}} />
-            <div className='text-center  py-3 'style={{width:"100%",color:"black",background:"#f9f9f9"}}>
+         
+            <div className='text-center  py-3 'style={{width:"100%",color:"white",background:"skyblue",fontWeight:"bold"}}>
             &copy; Copyright  by Tasnia Sharin. 
             </div></div>   
         </div>
