@@ -8,6 +8,8 @@ const Footer = () => {
                 <div className='col'>
                     <div style={{fontSize:"35px",fontWeight:"bold"}}><i className="fa-solid fa-car-side"style={{color:"hotpink"}}></i><span style={{color:"skyblue"}}>Toy</span><span style={{color:"hotpink"}}>Man</span></div>
                     <p style={{color:"black"}}>A kids toy shop is a store that specializes in selling toys and games designed specifically for children.</p>
+                    <div style={{color:"black"}}>Address  :Mirpur,Dhaka</div>
+                    <div style={{color:"black"}}>Email  :xyz@gmail.com</div>
                 </div>
                 <div className='col colcolor'>
                     <h3 style={{color:"hotpink"}}>Quick Links</h3>

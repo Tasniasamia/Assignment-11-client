@@ -8,7 +8,7 @@ const ErrorPage = () => {
     <section className='d-flex align-items-center justify-content-center p-5 bg-gray text-gray'style={{height:"700px"}}>
       <div className='container d-flex flex-col align-items-end justify-content-center px-5 mx-auto my-5'>
        <div>
-        <div className=' text-center'style={{marginTop:"500px"}}>
+        <div className=' text-center'style={{marginTop:"600px"}}>
          
           <Link
             to='/'

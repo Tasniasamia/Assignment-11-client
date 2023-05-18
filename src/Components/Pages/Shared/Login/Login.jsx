@@ -1,9 +1,11 @@
 import React, { useContext, useState } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { authdata } from '../Authprovider/Authprovider';
+import useTitle from '../../../../../useTitle';
 
 
 function Login() {
+    useTitle("Login");
     const receivedata=useContext(authdata);
     const [success,setSuccess]=useState(null);
     const [error,setError]=useState(null);

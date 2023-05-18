@@ -2,9 +2,10 @@ import React, { useEffect, useState } from 'react';
 import './Home.css';
 import Tabcomponents from './Tab/Tab';
 import Aboutus from '../../Shared/AboutUs/Aboutus';
+import useTitle from '../../../../../useTitle';
 
 const Home = () => {
-    
+    useTitle("Home");
   const[subcategory,setSubcategory]=useState([])
   useEffect(()=>{
       fetch('http://localhost:9999/subcategory')

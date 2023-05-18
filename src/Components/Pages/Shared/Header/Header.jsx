@@ -17,7 +17,7 @@ const Header = () => {
               <Link to="/" style={{color:"hotpink"}}>All Toys</Link>
               <Link to="/" style={{color:"hotpink"}}>My Toys</Link>
               <Link to="/" style={{color:"hotpink"}}>Add Toys</Link>
-              <Link to="/" style={{color:"hotpink"}}>Blog</Link>
+              <Link to="/blog" style={{color:"hotpink"}}>Blog</Link>
            
   
             </Nav>

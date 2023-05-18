@@ -12,6 +12,7 @@ import ErrorPage from './Components/Pages/Shared/Error/Errorpage.jsx';
 import Login from './Components/Pages/Shared/Login/Login.jsx';
 import Resister from './Components/Pages/Shared/Resister/Resister.jsx';
 import AuthProvider from './Components/Pages/Shared/Authprovider/Authprovider.jsx';
+import Blog from './Components/Pages/Home/Blog/Blog.jsx';
 
 const router = createBrowserRouter([
   {
@@ -28,6 +29,9 @@ const router = createBrowserRouter([
       },{
         path:"/resister",
         element:<Resister></Resister>
+      },{
+        path:"/blog",
+        element:<Blog></Blog>
       }
     ]
   },
