@@ -14,9 +14,9 @@ const Header = () => {
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto"id="navbar2">
               <Link to="/" style={{color:"hotpink"}}>Home</Link>
-              <Link to="/" style={{color:"hotpink"}}>All Toys</Link>
+              <Link to="/alltoy" style={{color:"hotpink"}}>All Toys</Link>
               <Link to="/" style={{color:"hotpink"}}>My Toys</Link>
-              <Link to="/" style={{color:"hotpink"}}>Add Toys</Link>
+              <Link to="/addtoy" style={{color:"hotpink"}}>Add Toys</Link>
               <Link to="/blog" style={{color:"hotpink"}}>Blog</Link>
            
   

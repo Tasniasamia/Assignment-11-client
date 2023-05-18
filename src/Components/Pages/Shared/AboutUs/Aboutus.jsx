@@ -13,7 +13,7 @@ const Aboutus = () => {
         <h2 style={{fontSize:"30px",color:"skyblue",fontWeight:"bold"}}>We design toys not just for kids
 but with kids</h2>
         
-        <p>
+        <p style={{color:"hotpink"}}>
             
 
         Car toys are miniature replicas or models of real automobiles designed for play and entertainment purposes. These toys are typically made from materials such as plastic, metal, or a combination of both. They come in various sizes, ranging from small die-cast models to larger scale models with intricate details.

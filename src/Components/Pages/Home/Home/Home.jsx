@@ -181,7 +181,7 @@ const Home = () => {
 
 
 
-<Tabcomponents></Tabcomponents>
+{/* <Tabcomponents></Tabcomponents> */}
 
 
             </div>

@@ -13,6 +13,9 @@ import Login from './Components/Pages/Shared/Login/Login.jsx';
 import Resister from './Components/Pages/Shared/Resister/Resister.jsx';
 import AuthProvider from './Components/Pages/Shared/Authprovider/Authprovider.jsx';
 import Blog from './Components/Pages/Home/Blog/Blog.jsx';
+import AddToy from './Components/Pages/Home/Add_Toy/AddToy.jsx';
+import AllToys from './Components/Pages/Home/AllToys/AllToys.jsx';
+import ToyDetails from './Components/Pages/Home/NormalToyDetails/ToyDetails.jsx';
 
 const router = createBrowserRouter([
   {
@@ -32,9 +35,24 @@ const router = createBrowserRouter([
       },{
         path:"/blog",
         element:<Blog></Blog>
-      }
-    ]
-  },
+      },{
+        path:"/addtoy",
+        element:<AddToy></AddToy>
+      },{
+        path:"/alltoy",
+        element:<AllToys></AllToys>
+      },{
+        path:"/alltoy/:id",
+        element:<ToyDetails></ToyDetails>,
+        loader:({params})=>fetch(`http://localhost:9999/AllToys/${params.id}`)
+  }
+
+
+
+
+
+
+]}
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
