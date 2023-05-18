@@ -80,32 +80,32 @@ const Home = () => {
     <h1 className='text-center'><span className='me-2'style={{color:"hotpink"}}>Our</span><span style={{color:"skyblue"}}>Gallery</span> </h1>
                  <div className='row row-cols-1 row-cols-md-3 p-5 text-white  '>
                 <div className='col'style={{border:"1px solid skyblue"}}>
-                <img src="https://img.freepik.com/premium-photo/funny-illustrated-car-painted-rainbow-colors_183364-23794.jpg?size=626&ext=jpg&ga=GA1.2.1636033582.1682966548&semt=ais "style={{height:"200px"}}className='w-full' alt="toys" />
+                <img src="https://img.freepik.com/premium-photo/funny-illustrated-car-painted-rainbow-colors_183364-23794.jpg?size=626&ext=jpg&ga=GA1.2.1636033582.1682966548&semt=ais "className='w-full img-fluid' alt="toys" />
                 </div>
                 <div className='col 'style={{border:"1px solid skyblue"}}>
-                <img src="https://img.freepik.com/free-vector/hand-drawn-tricycle-illustration_23-2149726600.jpg?size=626&ext=jpg&ga=GA1.2.1636033582.1682966548&semt=ais"style={{height:"200px"}}className='w-full' alt="toys" />   
+                <img src="https://img.freepik.com/free-vector/hand-drawn-tricycle-illustration_23-2149726600.jpg?size=626&ext=jpg&ga=GA1.2.1636033582.1682966548&semt=ais"className='w-full img-fluid' alt="toys" />   
                 </div>
                 <div className='col w-full'style={{border:"1px solid skyblue"}}>
-                <img src="https://img.freepik.com/free-vector/cartoon-bumper-car-white-background_1308-107382.jpg?size=626&ext=jpg&ga=GA1.1.1636033582.1682966548&semt=ais"className='w-full' style={{height:"200px"}} alt="toys" />
+                <img src="https://img.freepik.com/free-vector/cartoon-bumper-car-white-background_1308-107382.jpg?size=626&ext=jpg&ga=GA1.1.1636033582.1682966548&semt=ais"className=' img-fluid' alt="toys" />
                 </div>
 
                 <div className='col w-full'style={{border:"1px solid skyblue"}}>
-                <img src="https://img.freepik.com/premium-photo/3d-rendering-multicolored-tricycle-white-background-with-space-text-vehicle_187882-3060.jpg?size=626&ext=jpg&ga=GA1.1.1636033582.1682966548&semt=ais"className='w-full' style={{height:"200px"}} alt="toys" />
+                <img src="https://img.freepik.com/premium-photo/3d-rendering-multicolored-tricycle-white-background-with-space-text-vehicle_187882-3060.jpg?size=626&ext=jpg&ga=GA1.1.1636033582.1682966548&semt=ais"className='w-full img-fluid' alt="toys" />
                 </div>
                 <div className='col'style={{border:"1px solid skyblue"}}>
-                <img src="https://img.freepik.com/free-vector/motocross-racer-cartoon-white-background_1308-112810.jpg?size=626&ext=jpg&ga=GA1.2.1636033582.1682966548&semt=ais"style={{height:"200px"}} className='w-full' alt="toys" />
+                <img src="https://img.freepik.com/free-vector/motocross-racer-cartoon-white-background_1308-112810.jpg?size=626&ext=jpg&ga=GA1.2.1636033582.1682966548&semt=ais"className=' img-fluid' alt="toys" />
                 </div>
                 <div className='col'style={{border:"1px solid skyblue"}}>
-                <img src="https://img.freepik.com/free-vector/vector-yellow-dump-truck-unloading-side-view-illustration-isolated-white-background_8130-972.jpg?size=626&ext=jpg&ga=GA1.2.1636033582.1682966548&semt=sph"className='w-full' style={{height:"200px"}} alt="toys" />
+                <img src="https://img.freepik.com/free-vector/vector-yellow-dump-truck-unloading-side-view-illustration-isolated-white-background_8130-972.jpg?size=626&ext=jpg&ga=GA1.2.1636033582.1682966548&semt=sph"className='img-fluid'  alt="toys" />
                 </div>
                 <div className='col'style={{border:"1px solid skyblue"}}>
-                <img src="https://img.freepik.com/free-vector/tow-truck-carrying-road-roller_1308-54900.jpg?size=626&ext=jpg&ga=GA1.2.1636033582.1682966548&semt=sph"className="w-full"style={{height:"200px"}} alt="toys" />
+                <img src="https://img.freepik.com/free-vector/tow-truck-carrying-road-roller_1308-54900.jpg?size=626&ext=jpg&ga=GA1.2.1636033582.1682966548&semt=sph"className="img-fluid" alt="toys" />
                 </div>
                 <div className='col'style={{border:"1px solid skyblue"}}>
-                <img src="https://img.freepik.com/free-vector/hand-drawn-transport-truck_23-2149166246.jpg?size=626&ext=jpg&ga=GA1.1.1636033582.1682966548&semt=sph"className="w-full"style={{height:"200px"}} alt="toys" />
+                <img src="https://img.freepik.com/free-vector/hand-drawn-transport-truck_23-2149166246.jpg?size=626&ext=jpg&ga=GA1.1.1636033582.1682966548&semt=sph"className="img-fluid" alt="toys" />
                 </div>
                 <div className='col'style={{border:"1px solid skyblue"}}>
-                <img src="https://img.freepik.com/premium-photo/yellow-bus-toy-isolated-white-background_650468-256.jpg?size=626&ext=jpg&ga=GA1.1.1636033582.1682966548&semt=ais"className="w-full"style={{height:"200px"}} alt="toys" />
+                <img src="https://img.freepik.com/premium-photo/yellow-bus-toy-isolated-white-background_650468-256.jpg?size=626&ext=jpg&ga=GA1.1.1636033582.1682966548&semt=ais"className="img-fluid" alt="toys" />
                 </div>
             </div>
 
