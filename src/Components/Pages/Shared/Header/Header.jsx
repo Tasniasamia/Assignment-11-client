@@ -13,7 +13,7 @@ const Header = () => {
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto"id="navbar2">
-              <Link to="/"active style={{color:"hotpink"}}>Home</Link>
+              <Link to="/" style={{color:"hotpink"}}>Home</Link>
               <Link to="/" style={{color:"hotpink"}}>All Toys</Link>
               <Link to="/" style={{color:"hotpink"}}>My Toys</Link>
               <Link to="/" style={{color:"hotpink"}}>Add Toys</Link>
@@ -25,7 +25,7 @@ const Header = () => {
               
            
           
-        <button className='btn 'style={{background:"hotpink"}}><Link to="/Login"className='text-decoration-none text-white'> Login</Link></button>
+        <button className='btn 'style={{background:"hotpink"}}><Link to="/login"className='text-decoration-none text-white'> Login</Link></button>
           
       
             </Nav>
