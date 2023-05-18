@@ -1,0 +1,71 @@
+
+    [
+      {
+       
+        "name": "Sports Cars",
+        "toys": [
+          {
+            "id": "car001",
+            "name": "Red Racer",
+            "picture": "red_racer.jpg",
+            "price": 24.99,
+            "rating": 4.5,
+            "count":1
+          },
+          {
+            "id": "car002",
+            "name": "Blue Lightning",
+            "picture": "blue_lightning.jpg",
+            "price": 19.99,
+            "rating": 4.2,
+            "count":2
+          }
+        ]
+      },
+      {
+       
+        "name": "Off-Road Vehicles",
+        "toys": [
+          {
+            "id": "car003",
+            "name": "Mud Master",
+            "picture": "mud_master.jpg",
+            "price": 29.99,
+            "rating": 4.8,
+            "count":3
+          },
+          {
+            "id": "car004",
+            "name": "Rock Crawler",
+            "picture": "rock_crawler.jpg",
+            "price": 34.99,
+            "rating": 4.6,
+            "count":4
+          }
+        ]
+      },
+      {
+      
+        "name": "Vintage Cars",
+        "toys": [
+          {
+            "id": "car005",
+            "name": "Classic Cruiser",
+            "picture": "classic_cruiser.jpg",
+            "price": 27.99,
+            "rating": 4.4,
+            "count":5
+          },
+          {
+            "id": "car006",
+            "name": "Retro Roadster",
+            "picture": "retro_roadster.jpg",
+            "price": 22.99,
+            "rating": 4.3,
+            "count":6
+          }
+        ]
+      }
+    ]
+  
+  

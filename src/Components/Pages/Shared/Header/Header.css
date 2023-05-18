@@ -1,6 +1,16 @@
-.menu li{
-    margin-left: 20px;
-    color:skyblue;
-    font-weight: 900;
-    font-size: 17px;
+#navbar2 a{
+    text-decoration: none;
+    margin-left: 15px;
+   /* color:hotpink; */
+
+}
+#navbar2{
+    margin-left: 30px;
+    text-align: center;
+}
+.carousel-caption{
+    margin-bottom:50px;
+}
+.carousel-control-prev-icon{
+    color:white;
 }

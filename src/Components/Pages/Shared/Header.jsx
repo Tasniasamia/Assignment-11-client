@@ -1,37 +1,37 @@
-import React from 'react';
-import '../Shared/Header/Header.css';
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import Button from 'react-bootstrap/Button';
+import { Link } from 'react-router-dom';
+import './Header/Header.css'
 const Header = () => {
-    const navitem=(
-        <>
-        <li>Home</li>
-        <li>All Toys</li>
-        <li>Add Toys</li>
-        <li>My Toys</li>
-        <li>Blog</li>
-        </>
-    )
+   
     return (
-        <div className="navbar bg-base-100">
-        <div className="navbar-start">
-          <div className="dropdown">
-            <label tabIndex={0} className="btn btn-ghost lg:hidden">
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
-            </label>
-            <ul tabIndex={0} className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
-            {navitem}
-            </ul>
-          </div>
-          <a className="btn btn-ghost normal-case text-xl"><i className="fa-solid fa-truck-pickup"style={{color:"hotpink"}}></i><span style={{color:"skyblue"}}>Toy</span><span style={{color:"hotpink"}}>Man</span></a>
-        </div>
-        <div className="navbar-center hidden lg:flex">
-          <ul className="menu menu-horizontal px-1">
-            {navitem}
-          </ul>
-        </div>
-        <div className="navbar-end">
-          <a className="btn  text-white border-0"style={{background:"hotpink"}}>Login</a>
-        </div>
-      </div>
+        <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark"className='text-dark'>
+        <Container>
+          <Navbar.Brand className=''><Link to="/"style={{color:"brown",fontSize:"35px",fontWeight:"bold"}}className='text-decoration-none'> <i className="fa-solid fa-car-side"style={{color:"hotpink"}}></i><span style={{color:"skyblue"}}>Toy</span><span style={{color:"hotpink"}}>Man</span></Link></Navbar.Brand>
+          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+          <Navbar.Collapse id="responsive-navbar-nav">
+            <Nav className="me-auto"id="navbar2">
+              <Link to="/"active style={{color:"hotpink"}}>Home</Link>
+              <Link to="/" style={{color:"hotpink"}}>All Toys</Link>
+              <Link to="/" style={{color:"hotpink"}}>My Toys</Link>
+              <Link to="/" style={{color:"hotpink"}}>Add Toys</Link>
+              <Link to="/" style={{color:"hotpink"}}>Blog</Link>
+           
+  
+            </Nav>
+            <Nav >
+              
+           
+          
+        <button className='btn 'style={{background:"hotpink"}}><Link to="/Login"className='text-decoration-none text-white'> Login</Link></button>
+          
+      
+            </Nav>
+          </Navbar.Collapse>
+        </Container>
+      </Navbar>
     );
 };
 
