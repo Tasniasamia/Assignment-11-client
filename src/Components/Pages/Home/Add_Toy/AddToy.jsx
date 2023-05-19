@@ -30,7 +30,15 @@ const getallvalues=(event)=>{
         toyspik,toyname,sellername,Selleremail,subcategory,rating,price,quantity,des
     }
     console.log(user);
-
+    event.target.toyspik.value="";
+    event.target.toyname.value="";
+    event.target.sellername.value="";
+    event.target.email.value="";
+    event.target.subcategory.value="";
+    event.target.rating.value="";
+    event.target.price.value="";
+    event.target.quantity.value="";
+    event.target.des.value="";
     fetch('http://localhost:9999/AddToy',{
         method:"POST",
         headers:{

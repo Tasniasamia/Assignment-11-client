@@ -4,8 +4,11 @@ import Navbar from 'react-bootstrap/Navbar';
 import Button from 'react-bootstrap/Button';
 import { Link } from 'react-router-dom';
 import './Header.css';
+import { useContext } from 'react';
+import { authdata } from '../Authprovider/Authprovider';
 const Header = () => {
-   
+   const receivedata=useContext(authdata);
+
     return (
         <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark"className=''>
         <Container>
@@ -15,7 +18,7 @@ const Header = () => {
             <Nav className="me-auto"id="navbar2">
               <Link to="/" style={{color:"hotpink"}}>Home</Link>
               <Link to="/alltoy" style={{color:"hotpink"}}>All Toys</Link>
-              <Link to="/" style={{color:"hotpink"}}>My Toys</Link>
+              <Link to="/mytoy" style={{color:"hotpink"}}>My Toys</Link>
               <Link to="/addtoy" style={{color:"hotpink"}}>Add Toys</Link>
               <Link to="/blog" style={{color:"hotpink"}}>Blog</Link>
            
@@ -24,8 +27,11 @@ const Header = () => {
             <Nav >
               
            
-          
-        <button className='btn 'style={{background:"hotpink"}}><Link to="/login"className='text-decoration-none text-white'> Login</Link></button>
+          {
+            receivedata?.user?.email ?<button className='btn text-white'style={{background:"hotpink"}}onClick={receivedata.signout}> Logout</button>: <button className='btn 'style={{background:"hotpink"}}><Link to="/login"className='text-decoration-none text-white'> Login</Link></button>
+            
+          }
+      
           
       
             </Nav>
