@@ -10,18 +10,37 @@ const MyToy = () => {
 
     const[data,setData]=useState([]);
     const[depend,setDepend]=useState([])
+    // useEffect(()=>{
+    //     fetch('http://localhost:9999/AllToys')
+    //     .then(res=>res.json())
+    //     .then(datas=>{console.log(datas);setDepend(datas)})
+    // },[receivedata.user])
+
+    // useEffect(()=>{
+    //     fetch('http://localhost:9999/collectassendata',{
+    //         method:"POST",
+    //         headers:{
+    //             "content-type":"application/json"
+    //         },
+    //         body:JSON.stringify(data)
+    //     }).then(res=>res.json())
+    //     .then(data=>console.log(data))
+
+
+    // },[receivedata.user,data])
     useEffect(()=>{
-        fetch('http://localhost:9999/AllToys')
-        .then(res=>res.json())
-        .then(datas=>{console.log(datas);setDepend(datas)})
-    },[receivedata.user])
-    useEffect(()=>{
-        fetch(`http://localhost:9999/mytoys/${receivedata?.user?.email}`)
+        fetch(`http://localhost:9999/mytoysdatas/${receivedata?.user?.email}`)
         .then(res=>res.json())
         .then(datas=>{console.log(datas);setData(datas)})
     // eslint-disable-next-line react-hooks/exhaustive-deps
     },[receivedata.user])
-    
+
+    // const assending=()=>{
+    //     fetch('http://localhost:9999/asenddata')
+    //     .then(res=>res.json())
+    //     .then(data=>setData(data))
+    // }
+
     return (
         <div>
             <Container>

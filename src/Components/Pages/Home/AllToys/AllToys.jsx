@@ -40,7 +40,7 @@ fetch(`http://localhost:9999/Alltoysdata/${searchitem}`)
       <th scope="col">Price</th>
       <th scope="col">Available Quantity</th>
       <th scope="col">Details</th>
-      <th scope="col">Add Product</th>
+      {/* <th scope="col">Add Product</th> */}
     </tr>
   </thead>
   <tbody>
