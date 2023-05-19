@@ -9,6 +9,9 @@ sellername:propsdata.sellername,
 toyname:propsdata.toyname,
 selleremail:propsdata.Selleremail,
 price:propsdata.price,
+quantity:propsdata.quantity,
+decription:propsdata.des,
+
 
 
         }
