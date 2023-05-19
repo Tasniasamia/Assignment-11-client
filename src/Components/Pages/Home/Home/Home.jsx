@@ -1,17 +1,14 @@
 import React, { useEffect, useState } from 'react';
 import './Home.css';
-import Tabcomponents from './Tab/Tab';
 import Aboutus from '../../Shared/AboutUs/Aboutus';
 import useTitle from '../../../../../useTitle';
+import { Container } from 'react-bootstrap';
+import Tabs from './Tab/Tab';
+// import { useEffect, useState } from 'react';
 
 const Home = () => {
     useTitle("Home");
-  const[subcategory,setSubcategory]=useState([])
-  useEffect(()=>{
-      fetch('http://localhost:9999/subcategory')
-      .then(res=>res.json())
-      .then(data=>{console.log(data);setSubcategory(data)})
-  },[])
+ 
     return (
         <div>
           
@@ -170,7 +167,9 @@ const Home = () => {
 
 
 
-
+<Container>
+    <Tabs></Tabs>
+</Container>
 
 
 
@@ -180,8 +179,6 @@ const Home = () => {
          
 
 
-
-{/* <Tabcomponents></Tabcomponents> */}
 
 
             </div>

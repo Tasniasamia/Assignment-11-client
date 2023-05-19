@@ -1,0 +1,76 @@
+[
+    {
+        "id": "car001",
+        "name": "Red Racer",
+        "picture": "https://img.freepik.com/free-vector/formula-1-racing-car-with-flat-design_23-2147884899.jpg?size=626&ext=jpg&ga=GA1.2.1636033582.1682966548&semt=ais",
+        "price": 24.99,
+        "rating": 4.5,
+        "count":1,
+        "sellername":"Arjun Khan",
+        "selleremail":"arj@gmail.com",
+        "quantity":10,
+        "des":"The Red Racer car is a high-speed toy car designed for racing enthusiasts and kids who love fast cars. It features a sleek and aerodynamic design with a vibrant red color that adds a touch of excitement to the racing experience. The Red Racer car is made of durable materials such as plastic or die-cast metal, ensuring its longevity even during intense play. It has smooth, low-friction wheels that allow it to glide effortlessly on various surfaces, including tracks or smooth floors."
+    },
+    {
+        "id": "car002",
+        "name": "Blue Lightning",
+        "picture": "https://img.freepik.com/free-photo/vintage-miniature-car-fake-landscape_155003-1097.jpg?size=626&ext=jpg&ga=GA1.2.1636033582.1682966548&semt=ais",
+        "price": 19.99,
+        "rating": 4.2,
+        "count":1,
+        "sellername":"Arun Khan",
+        "selleremail":"ar@gmail.com",
+        "quantity":10,
+        "des":"The Blue Lightning car is a high-speed toy car designed for racing enthusiasts and kids who love fast cars. It features a sleek and aerodynamic design with a vibrant red color that adds a touch of excitement to the racing experience. The Red Racer car is made of durable materials such as plastic or die-cast metal, ensuring its longevity even during intense play. It has smooth, low-friction wheels that allow it to glide effortlessly on various surfaces, including tracks or smooth floors."
+        
+    },
+    {
+        "id": "car003",
+        "name": "Mud Master",
+        "picture": "https://img.freepik.com/free-photo/fun-gorilla-3d-illustration_183364-80089.jpg?size=626&ext=jpg&ga=GA1.1.1636033582.1682966548&semt=ais",
+        "price": 29.99,
+        "rating": 4.8,
+        "count":2,
+        "sellername":"Arman Khan",
+        "selleremail":"arm@gmail.com",
+        "quantity":10,
+        "des":"The Mud Master is an off-road toy vehicle designed to conquer muddy and challenging terrains. It is specifically built for adventurous play and is ideal for children who enjoy exploring outdoor environments.The Mud Master features a rugged and durable design to withstand rough conditions. It typically has large, knobby tires with deep treads that provide excellent traction and grip in muddy or uneven surfaces. This allows the toy vehicle to navigate through mud, dirt, grass, gravel, and other off-road terrains with ease."
+    },
+    {
+        "id": "car004",
+        "name": "Rock Crawler",
+        "picture": "https://img.freepik.com/premium-vector/flat-vector-icon-heavy-monster-truck-orange-pickup-with-large-tires-black-tinted-windows-blue-decal-automobile-theme_223337-8380.jpg?size=626&ext=jpg&ga=GA1.2.1636033582.1682966548&semt=ais",
+        "price": 34.99,
+        "rating": 4.6,
+        "count":2,
+        "sellername":"Aman Khan",
+        "selleremail":"amn@gmail.com",
+        "quantity":12,
+        "des":"The Rock Crawler is an off-road toy vehicle designed to conquer muddy and challenging terrains. It is specifically built for adventurous play and is ideal for children who enjoy exploring outdoor environments.The Mud Master features a rugged and durable design to withstand rough conditions. It typically has large, knobby tires with deep treads that provide excellent traction and grip in muddy or uneven surfaces. This allows the toy vehicle to navigate through mud, dirt, grass, gravel, and other off-road terrains with ease."
+    },
+    {
+        "id": "car005",
+        "name": "Classic Cruiser",
+        "picture": "https://img.freepik.com/premium-vector/boy-driving-mini-car-toy-white-background_1308-73991.jpg?size=626&ext=jpg&ga=GA1.1.1636033582.1682966548&semt=ais",
+        "price": 27.99,
+        "rating": 4.4,
+        "count":3,
+        "sellername":"Aman Khan",
+        "selleremail":"amn@gmail.com",
+        "quantity":12,
+        "des":"The Classic Cruiser is a toy vehicle that captures the nostalgic charm of vintage cars. It is designed to resemble classic automobiles from the mid-20th century, evoking a sense of elegance and timeless style. The Classic Cruiser typically features a sleek and rounded body shape, reminiscent of iconic cars from the past. It may have smooth curves, chrome accents, and stylish details that emulate the design aesthetics of classic automobiles."
+    },
+    {
+        "id": "car006",
+        "name": "Retro Roadster",
+        "picture": "https://img.freepik.com/free-vector/vintage-red-car-toy-white-background_1308-76949.jpg?size=626&ext=jpg&ga=GA1.2.1636033582.1682966548&semt=ais",
+        "price": 22.99,
+        "rating": 4.3,
+        "count":3,
+        "sellername":"Aysha Khan",
+        "selleremail":"aysha@gmail.com",
+        "quantity":14,
+        "des":"The Retro Roadster is a toy vehicle that captures the nostalgic charm of vintage cars. It is designed to resemble classic automobiles from the mid-20th century, evoking a sense of elegance and timeless style. The Retro Roadsterr typically features a sleek and rounded body shape, reminiscent of iconic cars from the past. It may have smooth curves, chrome accents, and stylish details that emulate the design aesthetics of classic automobiles."
+    }
+  ]
+  

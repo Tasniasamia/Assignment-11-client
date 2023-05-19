@@ -9,7 +9,7 @@ const MyToy = () => {
     const receivedata=useContext(authdata);
 
     const[data,setData]=useState([]);
-    const[depend,setDepend]=useState([])
+    const[achivedata,setAchivedata]=useState(receivedata?.user?.email);
     // useEffect(()=>{
     //     fetch('http://localhost:9999/AllToys')
     //     .then(res=>res.json())
@@ -28,22 +28,38 @@ const MyToy = () => {
 
 
     // },[receivedata.user,data])
+
+
+
+
+
     useEffect(()=>{
         fetch(`http://localhost:9999/mytoysdatas/${receivedata?.user?.email}`)
         .then(res=>res.json())
         .then(datas=>{console.log(datas);setData(datas)})
     // eslint-disable-next-line react-hooks/exhaustive-deps
     },[receivedata.user])
-
-    // const assending=()=>{
-    //     fetch('http://localhost:9999/asenddata')
+    // useEffect(()=>{
+    //     fetch(`http://localhost:9999/mytoysdatasallitems/${achivedata}`)
     //     .then(res=>res.json())
-    //     .then(data=>setData(data))
+    //     .then(datas=>{console.log(datas);setData(datas)})
+    // // eslint-disable-next-line react-hooks/exhaustive-deps
+    // },[receivedata.user])
+  
+    // const asending=()=>{
+    //     setAchivedata("price");
     // }
-
+    // const desending=()=>{
+    //     setAchivedata("quantity");
+    // }
     return (
         <div>
+
             <Container>
+                {/* <div>
+                    <button className='btn btn-primary'onClick={asending}>Acending</button>
+                    <button className='btn btn-secondary'onClick={desending}>Desending</button>
+                </div> */}
           <div className='table-responsive'>
            <table className="table caption-top">
 
