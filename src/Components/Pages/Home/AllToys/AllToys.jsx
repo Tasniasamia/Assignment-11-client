@@ -12,6 +12,13 @@ const AllToys = () => {
         .then(datas=>{console.log(datas);setData(datas)})
     },[])
     console.log(data);
+    const[searchitem,setSearchItem]=useState(null);
+    const searchvalue=()=>{
+fetch(`http://localhost:9999/Alltoysdata/${searchitem}`)
+.then(res=>res.json())
+.then(data=>setData(data))
+
+    }
     return (
 
         <div>
@@ -19,8 +26,8 @@ const AllToys = () => {
        
         <Container style={{marginTop:"50px"}}>
         <div className="input-group mb-3 w-50">
-  <input type="text" className="form-control" placeholder="Search here" aria-label="Recipient's username" aria-describedby="basic-addon2"/>
-  <span className="input-group-text" id="basic-addon2">Search</span>
+  <input type="text"onChange={(e)=>setSearchItem(e.target.value)} className="form-control" placeholder="Search here" aria-label="Recipient's username" aria-describedby="basic-addon2"/>
+  <button className="btn btn-primary"onClick={searchvalue} id="basic-addon2">Search</button>
 </div>
         <div className='table-responsive'>
            <table className="table caption-top">
