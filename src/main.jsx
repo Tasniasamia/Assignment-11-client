@@ -18,6 +18,7 @@ import AllToys from './Components/Pages/Home/AllToys/AllToys.jsx';
 import ToyDetails from './Components/Pages/Home/NormalToyDetails/ToyDetails.jsx';
 import MyToy from './Components/Pages/Home/MyToy/MyToy.jsx';
 import Update from './Components/Pages/Home/MyToysUpdate/Update.jsx';
+import Subcategorydetails from './Components/Pages/Home/Subcategorydetails/Subcategorydetails.jsx';
 
 const router = createBrowserRouter([
   {
@@ -58,6 +59,11 @@ const router = createBrowserRouter([
   path:"/updatedata/:id",
   element:<Update></Update>,
   loader:({params})=>fetch(`http://localhost:9999/mytoysdata/${params.id}`)
+},
+{
+  path:"/subcategory/:id",
+  element:<Subcategorydetails></Subcategorydetails>,
+  loader:({params})=>fetch(`http://localhost:9999/subcatogory/${params.id}`)
 }
 
 

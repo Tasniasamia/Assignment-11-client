@@ -85,20 +85,20 @@ const Home = () => {
     <h1 className='text-center'><span className='me-2'style={{color:"hotpink"}}>Our</span><span style={{color:"skyblue"}}>Gallery</span> </h1>
                  <div className='row row-cols-1 row-cols-md-3 p-5 text-white  '>
                 <div className='col  h-100 my-2'>
-                <img src="https://img.freepik.com/free-photo/father-son-playing-with-toy-cars_23-2148500801.jpg?size=626&ext=jpg&ga=GA1.1.1636033582.1682966548&semt=ais "className=' img-fluid'style={{height:"300px",width:"300px"}} alt="toys" />
+                <img src="https://img.freepik.com/premium-vector/set-cartoon-car-vector-illustrations_491934-709.jpg?size=626&ext=jpg&ga=GA1.1.1636033582.1682966548&semt=ais"className=' img-fluid'style={{height:"300px",width:"300px"}} alt="toys" />
                 </div>
                 <div className='col  h-100 my-2'>
-                <img src="https://img.freepik.com/free-photo/surprised-woman-holding-red-car_1187-1196.jpg?size=626&ext=jpg&ga=GA1.1.1636033582.1682966548&semt=ais"className=' img-fluid'style={{height:"300px",width:"300px"}} alt="toys" />   
+                <img src="https://img.freepik.com/premium-vector/pack-toy-vehicles_1284-1440.jpg"className=' img-fluid'style={{height:"300px",width:"300px"}} alt="toys" />   
                 </div>
                 <div className='col  h-100 my-2'>
-                <img src="https://img.freepik.com/premium-photo/little-boy-buying-bicycle-kids-store_266732-7143.jpg?size=626&ext=jpg&ga=GA1.1.1636033582.1682966548&semt=ais"className=' img-fluid'style={{height:"300px",width:"300px"}} alt="toys" />   
+                <img src="https://img.freepik.com/premium-vector/toys-younger-children_176826-10.jpg?w=826"className=' img-fluid'style={{height:"300px",width:"300px"}} alt="toys" />   
                 </div>
 
                 <div className='col  h-100 my-2'>
-                <img src="https://img.freepik.com/free-photo/front-view-kid-playing-with-ecological-toys_23-2149884344.jpg?size=626&ext=jpg&ga=GA1.1.1636033582.1682966548&semt=ais"className=' img-fluid'style={{height:"300px",width:"300px"}} alt="toys" />   
+                <img src="https://img.freepik.com/free-vector/four-cars-childish-style_23-2147623256.jpg?size=626&ext=jpg&ga=GA1.1.1636033582.1682966548&semt=ais"className=' img-fluid'style={{height:"300px",width:"300px"}} alt="toys" />   
                 </div>
                 <div className='col  h-100 my-2'>
-                <img src="https://img.freepik.com/premium-photo/playground-sport-play-kindergarten_550617-75367.jpg?size=626&ext=jpg&ga=GA1.1.1636033582.1682966548&semt=ais"className=' img-fluid'style={{height:"300px",width:"300px"}} alt="toys" />   
+                <img src="https://img.freepik.com/free-vector/illustration-different-kind-toys_1308-2216.jpg?w=996&t=st=1684560622~exp=1684561222~hmac=c20273eddea2fa6d71c5f0df6e8b3c289345ff084a15fe68f7f73172095b4278"className=' img-fluid'style={{height:"300px",width:"300px"}} alt="toys" />   
                 </div>
                 <div className='col  h-100 my-2'>
                 <img src="https://img.freepik.com/free-photo/colorful-car-toys_1194-2341.jpg?size=626&ext=jpg&ga=GA1.2.1636033582.1682966548&semt=ais"className=' img-fluid'style={{height:"300px",width:"300px"}} alt="toys" />   
@@ -106,6 +106,14 @@ const Home = () => {
                
                
             </div>
+
+
+
+
+            <Container>
+    <Tabs></Tabs>
+</Container>
+
                {/* latest news */}
 
             <div className='container'style={{marginTop:"200px"}}>
@@ -167,9 +175,6 @@ const Home = () => {
 
 
 
-<Container>
-    <Tabs></Tabs>
-</Container>
 
 
 

@@ -19,7 +19,7 @@
   
   .active-tabs  {
     background: white;
-    border-bottom: 1px solid transparent;
+    border-bottom: 1px solid black;
   }
   
   .active-tabs::before {
@@ -46,7 +46,7 @@
   .content {
     background: white;
     padding: 20px;
-    width: 100%;
+    width:80%;
     height: 100%;
     display: none;
   }

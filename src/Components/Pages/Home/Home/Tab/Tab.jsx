@@ -1,8 +1,9 @@
 import { useEffect, useState } from "react";
 import "./Tab";
+import { Link } from "react-router-dom";
 
 function Tabs() {
-  const [toggleState, setToggleState] = useState();
+  const [toggleState, setToggleState] = useState(1);
   const[subcategory,setSubcategory]=useState([]);
   const[subdata,setSubdata]=useState([]);
   useEffect(()=>{
@@ -20,7 +21,9 @@ function Tabs() {
   };
 
   return (
-    <div className="container">
+    <div className="container"style={{marginTop:"200px"}}>
+ <h1 className='text-center my-4'><span className='me-2'style={{color:"hotpink"}}>Shop</span><span style={{color:"skyblue"}}>Category</span> </h1>
+
       <div className="bloc-tabs">
 
 
@@ -49,27 +52,39 @@ function Tabs() {
         >
           Tab 3
         </button> */}
- <div className="content-tabs d-flex">
+ <div className="content-tabs d-md-flex">
 
         {
             subdata.map(index=> <div key={index._id}
                 className={toggleState === (index.count) ? "content  active-content" : "content"}
               >
-                <h2>{index.name}</h2>
-                <hr />
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
-                  praesentium incidunt quia aspernatur quasi quidem facilis quo nihil
-                  vel voluptatum?
-                </p>
-              </div>)
+                 
+    <div className="card h-100 w-full ">
+        <div className="text-center p-md-5 py-3">
+      <img src={index.picture} className="card-img-top "style={{height:"200px"}} alt="car"/></div>
+      <div className="card-body">
+        <h5 className="card-title"style={{color:"hotpink"}}>{index.name}</h5>
+       <div><span className="me-2"style={{fontSize:"20px",fontWeight:"bold"}}>Price</span>:<span>{index.price}</span></div>
+       <div><span className="me-2"style={{fontSize:"20px",fontWeight:"bold"}}>Rating</span>:<span>{index.rating}</span></div>
+       <button className="btn text-white mt-4"style={{background:"hotpink"}}>
+        <Link to={`/subcategory/${index._id}`}className="text-decoration-none text-white">View Details</Link> </button>
+
+      </div>
+    </div>
+  
+              </div>
+              
+              
+              
+              
+              )
         }
     
     </div>
        
         
 
-      {/* <div className="content-tabs d-flex">
+      {/* <div classNameName="content-tabs d-flex">
         <div
           className={toggleState === 1 ? "content  active-content" : "content"}
         >
