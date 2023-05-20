@@ -1,6 +1,7 @@
 import React, { useContext } from 'react';
 import { Navigate, useLocation } from 'react-router-dom';
 import { authdata } from '../Authprovider/Authprovider';
+import Loadingbtn from '../Loadingbtn/Loadingbtn';
 
 // eslint-disable-next-line react/prop-types
 const Private_route = ({children}) => {
@@ -13,7 +14,7 @@ const Private_route = ({children}) => {
         return children
     }
     if(loading){
-        return <div>loading.....</div>
+        return <Loadingbtn/>
     }
     return <Navigate to="/Login"state={{from:location}}></Navigate>
 };

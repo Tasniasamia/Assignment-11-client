@@ -2,10 +2,21 @@ import React, { useEffect, useState } from 'react';
 import useTitle from '../../../../../useTitle';
 import Alltoycard from '../Alltoycard/Alltoycard';
 import { Container } from 'react-bootstrap';
+import { useNavigate, useNavigation } from 'react-router-dom';
+import Loadingbtn from '../../Shared/Loadingbtn/Loadingbtn';
 
 const AllToys = () => {
     useTitle("All Toys")
+    const navigate=useNavigation();
+    if(navigate.state=="loading"){
+        return <Loadingbtn></Loadingbtn>
+    }
+    // eslint-disable-next-line react-hooks/rules-of-hooks
+ 
+   
+    // eslint-disable-next-line react-hooks/rules-of-hooks
     const[data,setData]=useState([]);
+    // eslint-disable-next-line react-hooks/rules-of-hooks
     useEffect(()=>{
         fetch('http://localhost:9999/AllToys')
         .then(res=>res.json())
@@ -27,7 +38,7 @@ fetch(`http://localhost:9999/Alltoysdata/${searchitem}`)
         <Container style={{marginTop:"50px"}}>
         <div className="input-group mb-3 w-50">
   <input type="text"onChange={(e)=>setSearchItem(e.target.value)} className="form-control" placeholder="Search here" aria-label="Recipient's username" aria-describedby="basic-addon2"/>
-  <button className="btn btn-primary"onClick={searchvalue} id="basic-addon2">Search</button>
+  <button className="btn text-white"style={{background:"skyblue"}}onClick={searchvalue} id="basic-addon2">Search</button>
 </div>
         <div className='table-responsive'>
            <table className="table caption-top">

@@ -1,7 +1,12 @@
 import React from 'react';
 import './Alltoycard.css';
-import { Link } from 'react-router-dom';
+import { Link, useNavigation } from 'react-router-dom';
+import Loadingbtn from '../../Shared/Loadingbtn/Loadingbtn';
 const Alltoycard = (props) => {
+    const navigate=useNavigation();
+    if(navigate.state=="loading"){
+        return <Loadingbtn></Loadingbtn>
+    }
     const propsdata=props.indexdata;
 //     function collectvalue(){
 //         const alluser={

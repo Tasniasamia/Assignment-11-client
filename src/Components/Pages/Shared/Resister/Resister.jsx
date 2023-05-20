@@ -29,7 +29,7 @@ function Resister() {
             const user = userCredential.user;
             console.log(user);
             setSuccess("User has submited successfully");
-            // receivedata.signout();
+            receivedata.signout();
             setError("");
       
             receivedata.displayname(name,photo)
@@ -40,7 +40,7 @@ function Resister() {
               // An error occurred
               // ...
             });
-            receivedata.signout();
+            // receivedata.signout();
             event.target.name.value="";
             event.target.email.value="";
             event.target.password.value="";

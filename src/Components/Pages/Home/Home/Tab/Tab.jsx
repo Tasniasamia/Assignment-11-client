@@ -1,8 +1,17 @@
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import "./Tab";
-import { Link } from "react-router-dom";
+import { Link, useNavigation } from "react-router-dom";
+import Loadingbtn from "../../../Shared/Loadingbtn/Loadingbtn";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
+import { authdata } from "../../../Shared/Authprovider/Authprovider";
 function Tabs() {
+    const navigate=useNavigation();
+    if(navigate.state=="loading"){
+        return <Loadingbtn></Loadingbtn>
+    }
+const receivedata=useContext(authdata);
   const [toggleState, setToggleState] = useState(1);
   const[subcategory,setSubcategory]=useState([]);
   const[subdata,setSubdata]=useState([]);
@@ -19,7 +28,11 @@ function Tabs() {
   const toggleTab = (index) => {
     setToggleState(index);
   };
-
+const toastfunction=()=>{
+ if(!receivedata?.user){
+  return  toast('Please sign in your account');
+ }
+}
   return (
     <div className="container"style={{marginTop:"200px"}}>
  <h1 className='text-center my-4'><span className='me-2'style={{color:"hotpink"}}>Shop</span><span style={{color:"skyblue"}}>Category</span> </h1>
@@ -30,7 +43,7 @@ function Tabs() {
         {subcategory.map(index=><button key={index._id}
           className={toggleState === (index.contnumber) ? "tabs active-tabs" : "tabs"}
           onClick={() => toggleTab(index.contnumber)}
-        >
+        style={{color:"hotpink",fontWeight:"bold"}}>
           {index.name}
         </button>  )}
         </div>
@@ -66,7 +79,7 @@ function Tabs() {
         <h5 className="card-title"style={{color:"hotpink"}}>{index.name}</h5>
        <div><span className="me-2"style={{fontSize:"20px",fontWeight:"bold"}}>Price</span>:<span>{index.price}</span></div>
        <div><span className="me-2"style={{fontSize:"20px",fontWeight:"bold"}}>Rating</span>:<span>{index.rating}</span></div>
-       <button className="btn text-white mt-4"style={{background:"hotpink"}}>
+       <button className="btn text-white mt-4"style={{background:"hotpink"}}onClick={toastfunction}>
         <Link to={`/subcategory/${index._id}`}className="text-decoration-none text-white">View Details</Link> </button>
 
       </div>

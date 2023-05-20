@@ -136,7 +136,7 @@ const Home = () => {
     <div className="card h-100">
       <img src="https://img.freepik.com/free-vector/tow-truck-carrying-road-roller_1308-54900.jpg?size=626&ext=jpg&ga=GA1.2.1636033582.1682966548&semt=sph"style={{height:"200px"}} className="card-img-top" alt="cardimg"/>
       <div className="card-body my-3">
-        <h4 className="card-title text-center"style={{color:"hotpink"}}>Featured</h4>
+        <h4 className="card-title text-center"style={{color:"hotpink"}}>Best Deal</h4>
      
 
        

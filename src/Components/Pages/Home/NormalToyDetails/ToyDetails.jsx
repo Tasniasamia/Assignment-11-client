@@ -1,9 +1,14 @@
 import React from 'react';
 import './ToyDetails.css';
-import { useLoaderData } from 'react-router-dom';
+import { useLoaderData, useNavigation } from 'react-router-dom';
 import { Container } from 'react-bootstrap';
 import useTitle from '../../../../../useTitle';
+import Loadingbtn from '../../Shared/Loadingbtn/Loadingbtn';
 const ToyDetails = () => {
+    const navigation=useNavigation();
+    if(navigation.state=="loading"){
+        return <Loadingbtn></Loadingbtn>
+    }
     const loaddata=useLoaderData();
     useTitle("ToyDetails")
     return (
@@ -12,13 +17,13 @@ const ToyDetails = () => {
              <div className="card h-100 w-50">
       <img src={loaddata.toyspik} className="card-img-top img-fluid"style={{height:"300px"}} alt="..."/>
       <div className="card-body">
-        <p><span>Toy Name:</span> <span>{loaddata.toyname}</span></p>
-        <p><span>Seller Name:</span> <span>{loaddata.sellername}</span> </p>
-        <p><span>Seller Email:</span><span>{loaddata.Selleremail}</span></p>
-        <p><span>Price :</span><span>{loaddata.price}</span></p>
-        <p><span>Ratings:</span><span>{loaddata.rating}</span></p>
-        <p><span>Available Quantity:</span><span>{loaddata.quantity}</span></p>
-        <p className="card-text">{loaddata.des}</p>
+        <p style={{color:"hotpink",fontSize:"25px",fontWeight:"bold"}}> {loaddata.toyname}</p>
+        <p><span style={{fontWeight:"bold"}}className='me-3'>Seller Name:</span> <span>{loaddata.sellername}</span> </p>
+        <p><span style={{fontWeight:"bold"}}className='me-3'>Seller Email:</span><span>{loaddata.Selleremail}</span></p>
+        <p><span style={{fontWeight:"bold"}}className='me-3'>Price :</span><span>{loaddata.price}</span></p>
+        <p><span style={{fontWeight:"bold"}}className='me-3'>Ratings:</span><span>{loaddata.rating}</span></p>
+        <p><span style={{fontWeight:"bold"}}className='me-3'>Available Quantity:</span><span>{loaddata.quantity}</span></p>
+        <p className="card-text"><span style={{fontWeight:"bold"}}className='me-3'>Description:</span>{loaddata.des}</p>
       </div>
     </div>
         </div>

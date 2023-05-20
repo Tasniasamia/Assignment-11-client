@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom';
 import './Header.css';
 import { useContext } from 'react';
 import { authdata } from '../Authprovider/Authprovider';
+import ActiveLink from '../ActiveLink/ActiveLink';
 const Header = () => {
    const receivedata=useContext(authdata);
 
@@ -16,25 +17,28 @@ const Header = () => {
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto"id="navbar2">
-              <Link to="/" style={{color:"hotpink"}}>Home</Link>
-              <Link to="/alltoy" style={{color:"hotpink"}}>All Toys</Link>
-              <Link to="/mytoy" style={{color:"hotpink"}}>My Toys</Link>
-              <Link to="/addtoy" style={{color:"hotpink"}}>Add Toys</Link>
-              <Link to="/blog" style={{color:"hotpink"}}>Blog</Link>
+              <ActiveLink to="/" style={{color:"hotpink"}}>Home</ActiveLink>
+              <ActiveLink to="/alltoy" style={{color:"hotpink"}}>All Toys</ActiveLink>
+          {receivedata?.user && <ActiveLink to="/mytoy" style={{color:"hotpink"}}>My Toys</ActiveLink>}    
+          {receivedata?.user &&              <ActiveLink to="/addtoy" style={{color:"hotpink"}}>Add Toys</ActiveLink>
+}    
+              <ActiveLink to="/blog" style={{color:"hotpink"}}>Blog</ActiveLink>
            
   
             </Nav>
             <Nav >
-              
-           
+            <div className='d-flex justify-content-center align-items-center mx-auto'>
+            <div>
+            {
+                receivedata.user && <img src={receivedata.user.photoURL} alt="profile_imag"className='rounded-circle me-2'style={{height:"40px",width:"40px"}}data-toggle="tooltip" data-placement="top" title={receivedata.user.displayName}/>
+            }</div>
+            <div>
+         
           {
-            receivedata?.user?.email ?<button className='btn text-white'style={{background:"hotpink"}}onClick={receivedata.signout}> Logout</button>: <button className='btn 'style={{background:"hotpink"}}><Link to="/login"className='text-decoration-none text-white'> Login</Link></button>
-            
+            receivedata.user?<button className='btn text-white'style={{background:"hotpink"}}onClick={receivedata.signout}> Logout</button>: <button className='btn 'style={{background:"hotpink"}}><Link to="/Login"className='text-decoration-none text-white'> Login</Link></button>
           }
-      
-          
-      
-            </Nav>
+        </div></div>
+          </Nav>
           </Navbar.Collapse>
         </Container>
       </Navbar>

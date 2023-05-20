@@ -3,9 +3,15 @@ import { authdata } from '../../Shared/Authprovider/Authprovider';
 import useTitle from '../../../../../useTitle';
 import Mytoydetails from '../Mytoydetails/Mytoydetails';
 import { Container } from 'react-bootstrap';
+import { useNavigation } from 'react-router-dom';
+import Loadingbtn from '../../Shared/Loadingbtn/Loadingbtn';
 
 const MyToy = () => {
     useTitle("MyToys");
+    const navigate=useNavigation();
+    if(navigate.state=="loading"){
+        return <Loadingbtn></Loadingbtn>
+    }
     const receivedata=useContext(authdata);
 
     const[data,setData]=useState([]);

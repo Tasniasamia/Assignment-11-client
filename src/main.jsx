@@ -19,6 +19,7 @@ import ToyDetails from './Components/Pages/Home/NormalToyDetails/ToyDetails.jsx'
 import MyToy from './Components/Pages/Home/MyToy/MyToy.jsx';
 import Update from './Components/Pages/Home/MyToysUpdate/Update.jsx';
 import Subcategorydetails from './Components/Pages/Home/Subcategorydetails/Subcategorydetails.jsx';
+import Private_route from './Components/Pages/Shared/PrivateRoute/PrivateRoute.jsx';
 
 const router = createBrowserRouter([
   {
@@ -40,7 +41,7 @@ const router = createBrowserRouter([
         element:<Blog></Blog>
       },{
         path:"/addtoy",
-        element:<AddToy></AddToy>
+        element:<Private_route><AddToy></AddToy></Private_route>
       },{
         path:"/alltoy",
         element:<AllToys></AllToys>
@@ -52,7 +53,7 @@ const router = createBrowserRouter([
 ,
 {
   path:"/mytoy",
-  element:<MyToy></MyToy>
+  element:<Private_route><MyToy></MyToy></Private_route>
 }
 ,
 {
@@ -62,7 +63,7 @@ const router = createBrowserRouter([
 },
 {
   path:"/subcategory/:id",
-  element:<Subcategorydetails></Subcategorydetails>,
+  element:<Private_route><Subcategorydetails></Subcategorydetails></Private_route>,
   loader:({params})=>fetch(`http://localhost:9999/subcatogory/${params.id}`)
 }
 

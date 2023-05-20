@@ -1,7 +1,14 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigation } from 'react-router-dom';
+import Loadingbtn from '../../Shared/Loadingbtn/Loadingbtn';
+import useTitle from '../../../../../useTitle';
 
 const Mytoydetails = (props) => {
+    useTitle("Mytoydetails")
+    const navigate=useNavigation();
+    if(navigate.state=="loading"){
+        return <Loadingbtn></Loadingbtn>
+    }
     const propsdata=props.indexdata;
     function deletefunction(id){
         
