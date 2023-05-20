@@ -126,7 +126,7 @@ const Home = () => {
 
 
 
-    <div className="row row-cols-1 row-cols-md-3 g-4"data-aos="fade-right"style={{marginTop:"70px"}}>
+    <div className="row row-cols-1 row-cols-md-4 g-4"data-aos="fade-up"style={{marginTop:"70px"}}>
   <div className="col">
     <div className="card h-100">
       <img src="https://img.freepik.com/premium-photo/funny-illustrated-car-painted-rainbow-colors_183364-23794.jpg?size=626&ext=jpg&ga=GA1.2.1636033582.1682966548&semt=ais"style={{height:"200px"}} className="card-img-top"alt="cardimg"/>
@@ -138,7 +138,7 @@ const Home = () => {
   </div>
   <div className="col">
     <div className="card h-100">
-      <img src="https://img.freepik.com/free-vector/tow-truck-carrying-road-roller_1308-54900.jpg?size=626&ext=jpg&ga=GA1.2.1636033582.1682966548&semt=sph"style={{height:"200px"}} className="card-img-top" alt="cardimg"/>
+      <img src="https://img.freepik.com/free-vector/tow-truck-carrying-road-roller_1308-54900.jpg?size=626&ext=jpg&ga=GA1.2.1636033582.1682966548&semt=sph"style={{height:"200px"}} className="card-img-top p-3" alt="cardimg"/>
       <div className="card-body my-3">
         <h4 className="card-title text-center"style={{color:"hotpink"}}>Best Deal</h4>
      
@@ -149,7 +149,7 @@ const Home = () => {
   </div>
   <div className="col">
     <div className="card h-100">
-      <img src="https://img.freepik.com/free-vector/vector-yellow-dump-truck-unloading-side-view-illustration-isolated-white-background_8130-972.jpg?size=626&ext=jpg&ga=GA1.2.1636033582.1682966548&semt=sph"style={{height:"200px"}} className="card-img-top" alt="cardimg"/>
+      <img src="https://img.freepik.com/free-vector/vector-yellow-dump-truck-unloading-side-view-illustration-isolated-white-background_8130-972.jpg?size=626&ext=jpg&ga=GA1.2.1636033582.1682966548&semt=sph"style={{height:"200px"}} className="card-img-top p-3" alt="cardimg"/>
       <div className="card-body my-3">
         <h4 className="card-title text-center"style={{color:"hotpink"}}>New Arrival</h4>
 <p className='card-text text-center'>New arrival refers to a recently introduced or newly available product or item in a particular store, marketplace, or collection.</p>
@@ -159,7 +159,7 @@ const Home = () => {
   </div>
   <div className="col">
     <div className="card h-100">
-      <img src="https://img.freepik.com/free-vector/hand-drawn-transport-truck_23-2149166246.jpg?size=626&ext=jpg&ga=GA1.1.1636033582.1682966548&semt=sph"style={{height:"200px"}} className="card-img-top" alt="cardimg"/>
+      <img src="https://img.freepik.com/free-vector/hand-drawn-transport-truck_23-2149166246.jpg?size=626&ext=jpg&ga=GA1.1.1636033582.1682966548&semt=sph"style={{height:"200px"}} className="card-img-top p-3" alt="cardimg"/>
       <div className="card-body my-3">
         <h4 className="card-title text-center"style={{color:"hotpink"}}>Featured</h4>
 <p className='card-text text-center'>A best feature refers to a standout attribute or characteristic of a product that sets it apart from others in its category. </p>
@@ -173,8 +173,7 @@ const Home = () => {
 
             </div>
 
-
-
+        
 
 
 
