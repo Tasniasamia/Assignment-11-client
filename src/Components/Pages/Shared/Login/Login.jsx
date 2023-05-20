@@ -51,22 +51,7 @@ function Login() {
 
     }
 
-// function githubsignin(){
-//     receivedata.github().then((result) => {
-//         const user = result.user;
-//         receivedata.setUser(user);
-//         navigate(from);
-//         // IdP data available using getAdditionalUserInfo(result)
-//         // ...
-//       }).catch((error) => {
-//         // Handle Errors here.
-//         const errorCode = error.code;
-//         const errorMessage = error.message;
-//         setError(errorMessage);
-       
-//         // ...
-//       });
-// }
+
    
 function google(){
     console.log(from);

@@ -16,12 +16,12 @@ const receivedata=useContext(authdata);
   const[subcategory,setSubcategory]=useState([]);
   const[subdata,setSubdata]=useState([]);
   useEffect(()=>{
-    fetch('http://localhost:9999/subcategoytwist')
+    fetch('https://assignment-11-server-tasniasamia.vercel.app/subcategoytwist')
     .then(res=>res.json())
     .then(data=>{console.log(data);setSubdata(data)})
 },[])
   useEffect(()=>{
-      fetch('http://localhost:9999/subcategory')
+      fetch('https://assignment-11-server-tasniasamia.vercel.app/subcategory')
       .then(res=>res.json())
       .then(data=>{console.log(data);setSubcategory(data)})
   },[])

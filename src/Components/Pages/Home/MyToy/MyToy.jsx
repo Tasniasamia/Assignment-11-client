@@ -47,7 +47,7 @@ const MyToy = () => {
     // },[receivedata.user])
     
     useEffect(()=>{
-        fetch(`http://localhost:9999/mytoysdatas?email=${receivedata?.user?.email}&sortdata=${achivedata}`)
+        fetch(`https://assignment-11-server-tasniasamia.vercel.app/mytoysdatas?email=${receivedata?.user?.email}&sortdata=${achivedata}`)
         .then(res=>res.json())
         .then(datas=>{console.log(datas);setData(datas)})
     // eslint-disable-next-line react-hooks/exhaustive-deps

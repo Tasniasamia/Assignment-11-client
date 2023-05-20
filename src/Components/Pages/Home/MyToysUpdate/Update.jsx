@@ -1,9 +1,14 @@
 import React, { useContext } from 'react';
 import { authdata } from '../../Shared/Authprovider/Authprovider';
-import { useLoaderData } from 'react-router-dom';
+import { useLoaderData, useNavigation } from 'react-router-dom';
 import useTitle from '../../../../../useTitle';
+import Loadingbtn from '../../Shared/Loadingbtn/Loadingbtn';
 
 const Update = () => {
+    const navigate=useNavigation();
+    if(navigate.state=="loading"){
+        return <Loadingbtn></Loadingbtn>
+    }
     useTitle("Update Toy");
     const loaddata=useLoaderData();
     console.log(loaddata);
@@ -25,7 +30,7 @@ const updatedata=(event)=>{
     }
     console.log(user);
 
-    fetch(`http://localhost:9999/mytoyupdate/${loaddata._id}`,{
+    fetch(`https://assignment-11-server-tasniasamia.vercel.app/mytoyupdate/${loaddata._id}`,{
         method:"PATCH",
         headers:{
             "content-type":"application/json"

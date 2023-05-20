@@ -18,14 +18,14 @@ const AllToys = () => {
     const[data,setData]=useState([]);
     // eslint-disable-next-line react-hooks/rules-of-hooks
     useEffect(()=>{
-        fetch('http://localhost:9999/AllToys')
+        fetch('https://assignment-11-server-tasniasamia.vercel.app/AllToys')
         .then(res=>res.json())
         .then(datas=>{console.log(datas);setData(datas)})
     },[])
     console.log(data);
     const[searchitem,setSearchItem]=useState(null);
     const searchvalue=()=>{
-fetch(`http://localhost:9999/Alltoysdata/${searchitem}`)
+fetch(`https://assignment-11-server-tasniasamia.vercel.app/Alltoysdata/${searchitem}`)
 .then(res=>res.json())
 .then(data=>setData(data))
 

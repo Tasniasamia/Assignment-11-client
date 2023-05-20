@@ -2,6 +2,7 @@ import React from 'react';
 import { Link, useNavigation } from 'react-router-dom';
 import Loadingbtn from '../../Shared/Loadingbtn/Loadingbtn';
 import useTitle from '../../../../../useTitle';
+import { ToastContainer, toast } from 'react-toastify';
 
 const Mytoydetails = (props) => {
     useTitle("Mytoydetails")
@@ -12,11 +13,12 @@ const Mytoydetails = (props) => {
     const propsdata=props.indexdata;
     function deletefunction(id){
         
-fetch(`http://localhost:9999/mytoysdel/${id}`,{
+fetch(`https://assignment-11-server-tasniasamia.vercel.app/mytoysdel/${id}`,{
     method:"DELETE"
 }).then(res=>res.json()).then(data=>{console.log(data);
 
     if(data.deletedCount>0){
+     toast('You have deleted');
         const filterdata=props.Data.filter(index=>index._id!==id);
         props.setData(filterdata);
     }

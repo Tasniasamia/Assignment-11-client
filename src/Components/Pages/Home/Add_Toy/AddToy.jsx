@@ -39,7 +39,7 @@ const getallvalues=(event)=>{
     event.target.price.value="";
     event.target.quantity.value="";
     event.target.des.value="";
-    fetch('http://localhost:9999/AddToy',{
+    fetch('https://assignment-11-server-tasniasamia.vercel.app/AddToy',{
         method:"POST",
         headers:{
             "content-type":"application/json"

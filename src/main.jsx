@@ -47,8 +47,8 @@ const router = createBrowserRouter([
         element:<AllToys></AllToys>
       },{
         path:"/alltoy/:id",
-        element:<ToyDetails></ToyDetails>,
-        loader:({params})=>fetch(`http://localhost:9999/AllToys/${params.id}`)
+        element:<Private_route><ToyDetails></ToyDetails></Private_route>,
+        loader:({params})=>fetch(`https://assignment-11-server-tasniasamia.vercel.app/AllToys/${params.id}`)
   }
 ,
 {
@@ -59,12 +59,12 @@ const router = createBrowserRouter([
 {
   path:"/updatedata/:id",
   element:<Update></Update>,
-  loader:({params})=>fetch(`http://localhost:9999/mytoysdata/${params.id}`)
+  loader:({params})=>fetch(`https://assignment-11-server-tasniasamia.vercel.app/mytoysdata/${params.id}`)
 },
 {
   path:"/subcategory/:id",
   element:<Private_route><Subcategorydetails></Subcategorydetails></Private_route>,
-  loader:({params})=>fetch(`http://localhost:9999/subcatogory/${params.id}`)
+  loader:({params})=>fetch(`https://assignment-11-server-tasniasamia.vercel.app/subcatogory/${params.id}`)
 }
 
 
