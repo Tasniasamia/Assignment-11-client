@@ -2,9 +2,10 @@ import React, { useState } from 'react';
 import { useContext } from 'react';
 import { Link, useNavigation } from 'react-router-dom';
 import { authdata } from '../Authprovider/Authprovider';
+import useTitle from '../../../../../useTitle';
 
 function Resister() {
-  
+  useTitle("Resister");
     const [success,setSuccess]=useState(null);
     const [error,setError]=useState(null);
     // const {resister,displayname,signout}=useContext(authdata);

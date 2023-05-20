@@ -8,9 +8,9 @@ import Loadingbtn from '../../Shared/Loadingbtn/Loadingbtn';
 const AllToys = () => {
     useTitle("All Toys")
     const navigate=useNavigation();
-    if(navigate.state=="loading"){
-        return <Loadingbtn></Loadingbtn>
-    }
+    // if(navigate.state=="loading"){
+    //     return <Loadingbtn></Loadingbtn>
+    // }
     // eslint-disable-next-line react-hooks/rules-of-hooks
  
    
@@ -20,15 +20,18 @@ const AllToys = () => {
     useEffect(()=>{
         fetch('https://assignment-11-server-tasniasamia.vercel.app/AllToys')
         .then(res=>res.json())
-        .then(datas=>{console.log(datas);setData(datas)})
+        .then(datas=>setData(datas))
     },[])
-    console.log(data);
+    // console.log(data);
     const[searchitem,setSearchItem]=useState(null);
     const searchvalue=()=>{
 fetch(`https://assignment-11-server-tasniasamia.vercel.app/Alltoysdata/${searchitem}`)
 .then(res=>res.json())
 .then(data=>setData(data))
 
+    }
+    if(navigate.state=="loading"){
+        return <Loadingbtn></Loadingbtn>
     }
     return (
 
