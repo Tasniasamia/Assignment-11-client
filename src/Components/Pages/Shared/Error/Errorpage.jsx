@@ -5,7 +5,7 @@ const ErrorPage = () => {
   const { error, status } = useRouteError()
   return (
     <div className="errorpags">
-    <section className='d-flex align-items-center justify-content-center p-5 bg-gray text-gray'style={{height:"700px"}}>
+    <section className='d-flex align-items-center justify-content-center p-5 bg-gray text-gray '>
       <div className='container d-flex flex-col align-items-end justify-content-center px-5 mx-auto my-5'>
        <div>
         <div className=' text-center'>
