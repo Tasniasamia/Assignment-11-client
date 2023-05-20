@@ -4,11 +4,15 @@ import Aboutus from '../../Shared/AboutUs/Aboutus';
 import useTitle from '../../../../../useTitle';
 import { Container } from 'react-bootstrap';
 import Tabs from './Tab/Tab';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 // import { useEffect, useState } from 'react';
 
 const Home = () => {
     useTitle("Home");
- 
+    useEffect(() => {
+        AOS.init();
+      }, [])
     return (
         <div>
           
@@ -83,7 +87,7 @@ const Home = () => {
 
 <div className='container'style={{marginTop:"200px"}}>
     <h1 className='text-center'><span className='me-2'style={{color:"hotpink"}}>Our</span><span style={{color:"skyblue"}}>Gallery</span> </h1>
-                 <div className='row row-cols-1 row-cols-md-3 p-5 text-white  '>
+                 <div className='row row-cols-1 row-cols-md-3 p-5 text-white  'data-aos="fade-left">
                 <div className='col  h-100 my-2'>
                 <img src="https://img.freepik.com/premium-vector/set-cartoon-car-vector-illustrations_491934-709.jpg?size=626&ext=jpg&ga=GA1.1.1636033582.1682966548&semt=ais"className=' img-fluid'style={{height:"300px",width:"300px"}} alt="toys" />
                 </div>
@@ -122,7 +126,7 @@ const Home = () => {
 
 
 
-    <div className="row row-cols-1 row-cols-md-3 g-4"style={{marginTop:"70px"}}>
+    <div className="row row-cols-1 row-cols-md-3 g-4"data-aos="fade-left"style={{marginTop:"70px"}}>
   <div className="col">
     <div className="card h-100">
       <img src="https://img.freepik.com/premium-photo/funny-illustrated-car-painted-rainbow-colors_183364-23794.jpg?size=626&ext=jpg&ga=GA1.2.1636033582.1682966548&semt=ais"style={{height:"200px"}} className="card-img-top" alt="cardimg"/>

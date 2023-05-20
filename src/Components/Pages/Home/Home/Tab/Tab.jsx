@@ -4,7 +4,8 @@ import { Link, useNavigation } from "react-router-dom";
 import Loadingbtn from "../../../Shared/Loadingbtn/Loadingbtn";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import { authdata } from "../../../Shared/Authprovider/Authprovider";
 function Tabs() {
     const navigate=useNavigation();
@@ -25,6 +26,9 @@ const receivedata=useContext(authdata);
       .then(res=>res.json())
       .then(data=>{console.log(data);setSubcategory(data)})
   },[])
+  useEffect(() => {
+    AOS.init();
+  }, [])
   const toggleTab = (index) => {
     setToggleState(index);
   };
@@ -34,7 +38,7 @@ const toastfunction=()=>{
  }
 }
   return (
-    <div className="container"style={{marginTop:"200px"}}>
+    <div className="container" data-aos="fade-up"style={{marginTop:"200px"}}>
  <h1 className='text-center my-4'><span className='me-2'style={{color:"hotpink"}}>Shop</span><span style={{color:"skyblue"}}>Category</span> </h1>
 
       <div className="bloc-tabs">
@@ -97,85 +101,7 @@ const toastfunction=()=>{
        
         
 
-      {/* <div classNameName="content-tabs d-flex">
-        <div
-          className={toggleState === 1 ? "content  active-content" : "content"}
-        >
-          <h2>Content 1</h2>
-          <hr />
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
-            praesentium incidunt quia aspernatur quasi quidem facilis quo nihil
-            vel voluptatum?
-          </p>
-        </div>
-
-        <div
-          className={toggleState === 2 ? "content  active-content" : "content"}
-        >
-          <h2>Content 2</h2>
-          <hr />
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
-            voluptatum qui adipisci.
-          </p>
-        </div>
-
-        <div
-          className={toggleState === 3 ? "content  active-content" : "content"}
-        >
-          <h2>Content 3</h2>
-          <hr />
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos sed
-            nostrum rerum laudantium totam unde adipisci incidunt modi alias!
-            Accusamus in quia odit aspernatur provident et ad vel distinctio
-            recusandae totam quidem repudiandae omnis veritatis nostrum
-            laboriosam architecto optio rem, dignissimos voluptatum beatae
-            aperiam voluptatem atque. Beatae rerum dolores sunt.
-          </p>
-        </div>
-
-        <div
-          className={toggleState === 1 ? "content  active-content" : "content"}
-        >
-          <h2>Content 1</h2>
-          <hr />
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
-            praesentium incidunt quia aspernatur quasi quidem facilis quo nihil
-            vel voluptatum?
-          </p>
-        </div>
-
-        <div
-          className={toggleState === 2 ? "content  active-content" : "content"}
-        >
-          <h2>Content 2</h2>
-          <hr />
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
-            voluptatum qui adipisci.
-          </p>
-        </div>
-
-        <div
-          className={toggleState === 3 ? "content  active-content" : "content"}
-        >
-          <h2>Content 3</h2>
-          <hr />
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos sed
-            nostrum rerum laudantium totam unde adipisci incidunt modi alias!
-            Accusamus in quia odit aspernatur provident et ad vel distinctio
-            recusandae totam quidem repudiandae omnis veritatis nostrum
-            laboriosam architecto optio rem, dignissimos voluptatum beatae
-            aperiam voluptatem atque. Beatae rerum dolores sunt.
-          </p>
-        </div>
-
-
-      </div> */}
+     
     </div>
   );
 }

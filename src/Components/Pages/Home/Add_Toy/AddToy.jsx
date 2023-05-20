@@ -2,6 +2,8 @@ import React, { useContext } from 'react';
 import useTitle from '../../../../../useTitle';
 import { authdata } from '../../Shared/Authprovider/Authprovider';
 import './AddToy.css';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 const AddToy = () => {
     useTitle("Add a Toy")
 
@@ -45,7 +47,12 @@ const getallvalues=(event)=>{
             "content-type":"application/json"
         },
         body:JSON.stringify(user)
-    }).then(res=>res.json()).then(data=>console.log(data))
+    }).then(res=>res.json()).then(data=>{console.log(data);
+    if(data.insertedId){
+      toast("You have Added");
+    }
+    
+    })
 }
 
 

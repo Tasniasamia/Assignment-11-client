@@ -3,7 +3,8 @@ import { authdata } from '../../Shared/Authprovider/Authprovider';
 import { useLoaderData, useNavigation } from 'react-router-dom';
 import useTitle from '../../../../../useTitle';
 import Loadingbtn from '../../Shared/Loadingbtn/Loadingbtn';
-
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 const Update = () => {
     const navigate=useNavigation();
     if(navigate.state=="loading"){
@@ -36,17 +37,17 @@ const updatedata=(event)=>{
             "content-type":"application/json"
         },
         body:JSON.stringify(user)
-    }).then(res=>res.json()).then(data=>console.log(data))
+    }).then(res=>res.json()).then(data=>{console.log(data)
+    
+    if(data.modifiedCount>0){
+toast('Updated Your Data');
+    }
+})
 
-    // event.target.toyspik.value="";
-    // event.target.toyname.value="";
-    // event.target.sellername.value="";
-    // event.target.email.value="";
-    // event.target.subcategory.value="";
-    // event.target.rating.value="";
-    // event.target.price.value="";
-    // event.target.quantity.value="";
-    // event.target.des.value="";
+ 
+    event.target.price.value="";
+    event.target.quantity.value="";
+    event.target.des.value="";
   
 }
 
