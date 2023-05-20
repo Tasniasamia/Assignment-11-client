@@ -6,6 +6,7 @@ import { Container } from 'react-bootstrap';
 import Tabs from './Tab/Tab';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import Online from '../../Shared/Online/Online';
 // import { useEffect, useState } from 'react';
 
 const Home = () => {
@@ -179,7 +180,7 @@ const Home = () => {
 
 
 
-
+<Online></Online>
 
 
 

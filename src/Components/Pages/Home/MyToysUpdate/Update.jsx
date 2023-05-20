@@ -58,7 +58,7 @@ if(navigate.state=="loading"){
 
     return (
         <div style={{marginTop:"50px"}}>
-        <h1 className='text-center'><span className='me-2'style={{color:"hotpink"}}>Add</span><span style={{color:"skyblue"}}>Toys</span> </h1> 
+        <h1 className='text-center'><span className='me-2'style={{color:"hotpink"}}>Update</span><span style={{color:"skyblue"}}>Toy</span> </h1> 
   <form onSubmit={updatedata}>
    <div className='row row-cols-1 row-cols-md-2 p-5'>
 
@@ -97,7 +97,7 @@ if(navigate.state=="loading"){
 </div>
 
    <div className='mx-auto text-center '>
-<button type="submit" className="btn text-white border-0 boshaw"style={{background:"hotpink"}}>Update Data</button>
+<button type="submit" className="btn text-white border-0 boshaw"style={{background:"hotpink"}}>Update Item</button>
 </div>
    
    </form>
