@@ -5,13 +5,14 @@ import Loadingbtn from '../../Shared/Loadingbtn/Loadingbtn';
 
 const Subcategorydetails = () => {
     const navigation=useNavigation();
-    if(navigation.state=="loading"){
-        return <Loadingbtn></Loadingbtn>
-    }
+   
     useTitle("Toydetails")
    
     const loaddata=useLoaderData();
     console.log(loaddata);
+    if(navigation.state=="loading"){
+        return <Loadingbtn></Loadingbtn>
+    }
     return (
         <div style={{marginTop:"100px"}}className='d-flex justify-content-center'>
             {/* <Container> */}

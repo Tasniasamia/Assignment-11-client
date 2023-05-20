@@ -37,6 +37,9 @@ const toastfunction=()=>{
   return  toast('Please sign in your account');
  }
 }
+if(navigate.state=="loading"){
+    return <Loadingbtn></Loadingbtn>
+}
   return (
     <div className="container" data-aos="fade-up"style={{marginTop:"200px"}}>
  <h1 className='text-center my-4'><span className='me-2'style={{color:"hotpink"}}>Shop</span><span style={{color:"skyblue"}}>Category</span> </h1>

@@ -9,9 +9,9 @@ import Loadingbtn from '../../Shared/Loadingbtn/Loadingbtn';
 const MyToy = () => {
     useTitle("MyToys");
     const navigate=useNavigation();
-    if(navigate.state=="loading"){
-        return <Loadingbtn></Loadingbtn>
-    }
+    // if(navigate.state=="loading"){
+    //     return <Loadingbtn></Loadingbtn>
+    // }
     const receivedata=useContext(authdata);
 
     const[data,setData]=useState([]);
@@ -59,6 +59,9 @@ const MyToy = () => {
     }
     const desending=()=>{
         setAchivedata("desending");
+    }
+    if(navigate.state=="loading"){
+        return <Loadingbtn></Loadingbtn>
     }
     return (
         <div>

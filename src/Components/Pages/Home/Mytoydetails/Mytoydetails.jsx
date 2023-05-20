@@ -7,9 +7,7 @@ import { ToastContainer, toast } from 'react-toastify';
 const Mytoydetails = (props) => {
     useTitle("Mytoydetails")
     const navigate=useNavigation();
-    if(navigate.state=="loading"){
-        return <Loadingbtn></Loadingbtn>
-    }
+   
     const propsdata=props.indexdata;
     function deletefunction(id){
         
@@ -28,6 +26,9 @@ fetch(`https://assignment-11-server-tasniasamia.vercel.app/mytoysdel/${id}`,{
 
            
                 
+    }
+    if(navigate.state=="loading"){
+        return <Loadingbtn></Loadingbtn>
     }
     return (
         <tr>

@@ -7,9 +7,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 const Update = () => {
     const navigate=useNavigation();
-    if(navigate.state=="loading"){
-        return <Loadingbtn></Loadingbtn>
-    }
+   
     useTitle("Update Toy");
     const loaddata=useLoaderData();
     console.log(loaddata);
@@ -53,7 +51,9 @@ toast('Updated Your Data');
 
 
 
-
+if(navigate.state=="loading"){
+    return <Loadingbtn></Loadingbtn>
+}
 
 
     return (
