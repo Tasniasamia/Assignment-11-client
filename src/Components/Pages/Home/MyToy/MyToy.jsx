@@ -9,7 +9,7 @@ const MyToy = () => {
     const receivedata=useContext(authdata);
 
     const[data,setData]=useState([]);
-    const[achivedata,setAchivedata]=useState(receivedata?.user?.email);
+    const[achivedata,setAchivedata]=useState("normal");
     // useEffect(()=>{
     //     fetch('http://localhost:9999/AllToys')
     //     .then(res=>res.json())
@@ -33,33 +33,35 @@ const MyToy = () => {
 
 
 
-    useEffect(()=>{
-        fetch(`http://localhost:9999/mytoysdatas/${receivedata?.user?.email}`)
-        .then(res=>res.json())
-        .then(datas=>{console.log(datas);setData(datas)})
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-    },[receivedata.user])
     // useEffect(()=>{
-    //     fetch(`http://localhost:9999/mytoysdatasallitems/${achivedata}`)
+    //     fetch(`http://localhost:9999/mytoysdatas/${receivedata?.user?.email}`)
     //     .then(res=>res.json())
     //     .then(datas=>{console.log(datas);setData(datas)})
     // // eslint-disable-next-line react-hooks/exhaustive-deps
     // },[receivedata.user])
-  
-    // const asending=()=>{
-    //     setAchivedata("price");
-    // }
-    // const desending=()=>{
-    //     setAchivedata("quantity");
-    // }
+    
+    useEffect(()=>{
+        fetch(`http://localhost:9999/mytoysdatas?email=${receivedata?.user?.email}&sortdata=${achivedata}`)
+        .then(res=>res.json())
+        .then(datas=>{console.log(datas);setData(datas)})
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    },[receivedata?.user?.email,achivedata])
+
+
+    const asending=()=>{
+        setAchivedata("asending");
+    }
+    const desending=()=>{
+        setAchivedata("desending");
+    }
     return (
         <div>
 
             <Container>
-                {/* <div>
-                    <button className='btn btn-primary'onClick={asending}>Acending</button>
-                    <button className='btn btn-secondary'onClick={desending}>Desending</button>
-                </div> */}
+                <div className='text-center m-5'>
+                    <button className='border-0 p-3 text-white'onClick={asending}style={{background:"hotpink"}}>Price-Ascending</button>
+                    <button className='border-0 p-3 text-white'onClick={desending}style={{background:"skyblue"}}>Price-Desending</button>
+                </div>
           <div className='table-responsive'>
            <table className="table caption-top">
 
