@@ -180,7 +180,7 @@ const Home = () => {
 
 
 
-<Online></Online>
+
 
 
 
