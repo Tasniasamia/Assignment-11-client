@@ -1,32 +1,30 @@
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import Button from 'react-bootstrap/Button';
 import { Link } from 'react-router-dom';
-import './Header.css';
+import './Header2.css';
 import { useContext } from 'react';
-import { authdata } from '../Authprovider/Authprovider';
 import ActiveLink from '../ActiveLink/ActiveLink';
-const Header = () => {
-   const receivedata=useContext(authdata);
+import { authdata } from '../Authprovider/Authprovider';
+function BasicExample() {
+    const receivedata=useContext(authdata);
 
-    return (
-        <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark"className=''>
-        <Container>
-          <Navbar.Brand className=''><Link to="/"style={{color:"brown",fontSize:"35px",fontWeight:"bold"}}className='text-decoration-none'> <i className="fa-solid fa-car-side"style={{color:"hotpink"}}></i><span style={{color:"skyblue"}}>Toy</span><span style={{color:"hotpink"}}>Man</span></Link></Navbar.Brand>
-          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-          <Navbar.Collapse id="responsive-navbar-nav">
-            <Nav className="me-auto"id="navbar2">
-              <ActiveLink to="/" style={{color:"hotpink"}}>Home</ActiveLink>
+  return (
+    <Navbar bg="light" expand="lg">
+      <Container>
+        <Navbar.Brand ><Link to="/"style={{color:"brown",fontSize:"35px",fontWeight:"bold"}}className='text-decoration-none'> <i className="fa-solid fa-car-side"style={{color:"hotpink"}}></i><span style={{color:"skyblue"}}>Toy</span><span style={{color:"hotpink"}}>Man</span></Link></Navbar.Brand>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className="me-auto"id="navbar2">
+          <ActiveLink to="/" style={{color:"hotpink"}}>Home</ActiveLink>
               <ActiveLink to="/alltoy" style={{color:"hotpink"}}>All Toys</ActiveLink>
           {receivedata?.user && <ActiveLink to="/mytoy" style={{color:"hotpink"}}>My Toys</ActiveLink>}    
           {receivedata?.user &&              <ActiveLink to="/addtoy" style={{color:"hotpink"}}>Add Toys</ActiveLink>
 }    
               <ActiveLink to="/blog" style={{color:"hotpink"}}>Blog</ActiveLink>
            
-  
-            </Nav>
-            <Nav >
+          </Nav>
+          <Nav >
             <div className='d-flex justify-content-center align-items-center mx-auto'>
             <div>
             {
@@ -39,10 +37,10 @@ const Header = () => {
           }
         </div></div>
           </Nav>
-          </Navbar.Collapse>
-        </Container>
-      </Navbar>
-    );
-};
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
+  );
+}
 
-export default Header;
+export default BasicExample;

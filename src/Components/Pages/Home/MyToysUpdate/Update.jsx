@@ -75,8 +75,8 @@ if(navigate.state=="loading"){
 
 
 <div className="mb-3 col">
-  <label htmlFor="exampleInputPrice1" className="form-label">Price</label>
-  <input type="text" className="form-control"name="price" id="exampleInputPrice1" aria-describedby="priceHelp"/>
+  <label htmlFor="exampleInputPrice1" className="form-label"style={{color:"hotpink"}}>Price</label>
+  <input type="text" className="form-control"name="price" id="exampleInputPrice1" aria-describedby="priceHelp"required/>
 </div>
 
 
@@ -84,13 +84,13 @@ if(navigate.state=="loading"){
 
 
 <div className="mb-3 col">
-  <label htmlFor="exampleInputquantity1" className="form-label">Available Quantity</label>
-  <input type="text" className="form-control"name="quantity" id="exampleInputQuantity1" aria-describedby="quantityHelp"/>
+  <label htmlFor="exampleInputquantity1" className="form-label"style={{color:"hotpink"}}>Available Quantity</label>
+  <input type="text" className="form-control"name="quantity" id="exampleInputQuantity1" aria-describedby="quantityHelp"required/>
 </div>
 
  <div className="mb-3 col">
-  <label htmlFor="exampleInputDesc1" className="form-label">Details Description</label><br/>
-  <textarea name="des" id="des" cols="88" rows="5"style={{border:"1px solid gray"}}className='p-3'placeholder='Enter Describtion '></textarea>
+  <label htmlFor="exampleInputDesc1" className="form-label"style={{color:"hotpink"}}>Details Description</label><br/>
+  <textarea name="des" id="des" cols="88" rows="5"style={{border:"1px solid gray"}}className='p-3'placeholder='Enter Describtion 'required></textarea>
 
 </div>
 

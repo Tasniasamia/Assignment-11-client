@@ -80,7 +80,7 @@ const getallvalues=(event)=>{
 
 
     <div className="mb-3 col">
-      <label htmlFor="toyspik" className="form-label">Toys Picture</label>
+      <label htmlFor="toyspik" className="form-label"style={{color:"hotpink"}}>Toys Picture</label>
       <input type="text" className="form-control"name="toyspik" id="exampleInputtoyspik1" aria-describedby="toyspikHelp"required/>
     </div>
 
@@ -88,14 +88,14 @@ const getallvalues=(event)=>{
 
 
     <div className="mb-3 col">
-      <label htmlFor="exampleInputtoyname1" className="form-label">Toys Name</label>
+      <label htmlFor="exampleInputtoyname1" className="form-label"style={{color:"hotpink"}}>Toys Name</label>
       <input type="text" className="form-control"name="toyname" id="exampleInputtoyname1" aria-describedby="toynameHelp"required/>
     </div>
 
 
 
     <div className="mb-3 col">
-      <label htmlFor="exampleInputsellername1" className="form-label">Seller Name</label>
+      <label htmlFor="exampleInputsellername1" className="form-label"style={{color:"hotpink"}}>Seller Name</label>
       <input type="text" className="form-control"name="sellername" id="exampleInputtoyname1" aria-describedby="sellerHelp"required/>
     </div>
 
@@ -103,37 +103,37 @@ const getallvalues=(event)=>{
 
 
     <div className="mb-3 col">
-      <label htmlFor="exampleInputEmail1" className="form-label">Seller Email</label>
+      <label htmlFor="exampleInputEmail1" className="form-label"style={{color:"hotpink"}}>Seller Email</label>
       <input type="email" className="form-control"name="email" id="exampleInputEmail1" aria-describedby="emailHelp"required/>
     </div>
 
 
 
     <div className="mb-3 col">
-      <label htmlFor="exampleInputsubcategory1" className="form-label">Subcategory</label>
+      <label htmlFor="exampleInputsubcategory1" className="form-label"style={{color:"hotpink"}}>Subcategory</label>
       <input type="text" className="form-control"name="subcategory" id="exampleInputsubcategory1" aria-describedby="subcategoryHelp"required/>
     </div>
 
 
     <div className="mb-3 col">
-      <label htmlFor="exampleInputPrice1" className="form-label">Price</label>
+      <label htmlFor="exampleInputPrice1" className="form-label"style={{color:"hotpink"}}>Price</label>
       <input type="text" className="form-control"name="price" id="exampleInputPrice1" aria-describedby="priceHelp"required/>
     </div>
 
 
 
     <div className="mb-3 col">
-      <label htmlFor="exampleInputRating1" className="form-label">Ratings</label>
+      <label htmlFor="exampleInputRating1" className="form-label"style={{color:"hotpink"}}>Ratings</label>
       <input type="text" className="form-control"name="rating" id="exampleInputRating1" aria-describedby="ratingHelp"required/>
     </div>
 
     <div className="mb-3 col">
-      <label htmlFor="exampleInputquantity1" className="form-label">Available Quantity</label>
+      <label htmlFor="exampleInputquantity1" className="form-label"style={{color:"hotpink"}}>Available Quantity</label>
       <input type="text" className="form-control"name="quantity" id="exampleInputQuantity1" aria-describedby="quantityHelp"required/>
     </div>
 
      <div className="mb-3 col">
-      <label htmlFor="exampleInputDesc1" className="form-label">Details Description</label><br/>
+      <label htmlFor="exampleInputDesc1" className="form-label"style={{color:"hotpink"}}>Details Description</label><br/>
       <textarea name="des" id="des" cols="88" rows="5"style={{border:"1px solid gray"}}className='p-3'placeholder='Enter Describtion '></textarea>
 
     </div>

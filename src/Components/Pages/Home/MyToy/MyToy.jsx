@@ -76,13 +76,13 @@ const MyToy = () => {
 
   <thead>
     <tr>
-      <th scope="col">Toy Name</th>
-      <th scope="col">Seller Name</th>
-      <th scope="col">Seller Email</th>
-      <th scope="col">Price</th>
-      <th scope="col">Quantity</th>
-      <th scope="col">Remove</th>
-      <th scope="col">Modify</th>
+      <th scope="col"style={{color:"hotpink"}}>Toy Name</th>
+      <th scope="col"style={{color:"hotpink"}}>Seller Name</th>
+      <th scope="col"style={{color:"hotpink"}}>Seller Email</th>
+      <th scope="col"style={{color:"hotpink"}}>Price</th>
+      <th scope="col"style={{color:"hotpink"}}>Quantity</th>
+      <th scope="col"style={{color:"hotpink"}}>Remove</th>
+      <th scope="col"style={{color:"hotpink"}}>Modify</th>
     </tr>
   </thead>
   <tbody>

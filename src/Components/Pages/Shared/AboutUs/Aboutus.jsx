@@ -1,14 +1,18 @@
-import React from 'react';
-
+import React, { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 const Aboutus = () => {
+    useEffect(() => {
+        AOS.init();
+      }, [])
     return (
         <div>
          <div className='d-flex justify-content-center align-items-center'>
-<div className='row my-5 d-flex justify-content-center align-items-center'>
+<div className='row my-5 d-flex justify-content-center align-items-center' data-aos="fade-up">
     <div className='col-md-5'>
         <img src="https://img.freepik.com/premium-photo/children-play-designer-table_199620-3537.jpg?size=626&ext=jpg&ga=GA1.1.1636033582.1682966548&semt=ais" alt="food-photo"className='img-fluid rounded' />
     </div>
-    <div className='col-md-5 p-5 '>
+    <div className='col-md-5 p-5 ' >
        
         <h2 style={{fontSize:"30px",color:"skyblue",fontWeight:"bold"}}>We design toys not just for kids
 but with kids</h2>

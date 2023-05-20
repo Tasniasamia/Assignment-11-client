@@ -48,12 +48,12 @@ fetch(`https://assignment-11-server-tasniasamia.vercel.app/Alltoysdata/${searchi
 
   <thead>
     <tr>
-      <th scope="col">Seller Name</th>
-      <th scope="col">Toy Name</th>
-      <th scope="col">SubCategory</th>
-      <th scope="col">Price</th>
-      <th scope="col">Available Quantity</th>
-      <th scope="col">Details</th>
+      <th scope="col"style={{color:"skyblue"}}>Seller Name</th>
+      <th scope="col"style={{color:"skyblue"}}>Toy Name</th>
+      <th scope="col"style={{color:"skyblue"}}>SubCategory</th>
+      <th scope="col"style={{color:"skyblue"}}>Price</th>
+      <th scope="col"style={{color:"skyblue"}}>Available Quantity</th>
+      <th scope="col"style={{color:"skyblue"}}>Details</th>
       {/* <th scope="col">Add Product</th> */}
     </tr>
   </thead>

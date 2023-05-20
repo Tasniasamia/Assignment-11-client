@@ -89,23 +89,23 @@ const Home = () => {
     <h1 className='text-center'><span className='me-2'style={{color:"hotpink"}}>Our</span><span style={{color:"skyblue"}}>Gallery</span> </h1>
                  <div className='row row-cols-1 row-cols-md-3 p-5 text-white  'data-aos="fade-left">
                 <div className='col  h-100 my-2'>
-                <img src="https://img.freepik.com/premium-vector/set-cartoon-car-vector-illustrations_491934-709.jpg?size=626&ext=jpg&ga=GA1.1.1636033582.1682966548&semt=ais"className=' img-fluid'style={{height:"300px",width:"300px"}} alt="toys" />
+                <img src="https://img.freepik.com/premium-vector/set-cartoon-car-vector-illustrations_491934-709.jpg?size=626&ext=jpg&ga=GA1.1.1636033582.1682966548&semt=ais"className=' img-fluid'style={{height:"300px",width:"300px"}}data-aos="zoom-in" alt="toys" />
                 </div>
                 <div className='col  h-100 my-2'>
-                <img src="https://img.freepik.com/premium-vector/pack-toy-vehicles_1284-1440.jpg"className=' img-fluid'style={{height:"300px",width:"300px"}} alt="toys" />   
+                <img src="https://img.freepik.com/premium-vector/pack-toy-vehicles_1284-1440.jpg"className=' img-fluid'style={{height:"300px",width:"300px"}}data-aos="zoom-in" alt="toys" />   
                 </div>
                 <div className='col  h-100 my-2'>
-                <img src="https://img.freepik.com/premium-vector/toys-younger-children_176826-10.jpg?w=826"className=' img-fluid'style={{height:"300px",width:"300px"}} alt="toys" />   
+                <img src="https://img.freepik.com/premium-vector/toys-younger-children_176826-10.jpg?w=826"className=' img-fluid'style={{height:"300px",width:"300px"}}data-aos="zoom-in" alt="toys" />   
                 </div>
 
                 <div className='col  h-100 my-2'>
-                <img src="https://img.freepik.com/free-vector/four-cars-childish-style_23-2147623256.jpg?size=626&ext=jpg&ga=GA1.1.1636033582.1682966548&semt=ais"className=' img-fluid'style={{height:"300px",width:"300px"}} alt="toys" />   
+                <img src="https://img.freepik.com/free-vector/four-cars-childish-style_23-2147623256.jpg?size=626&ext=jpg&ga=GA1.1.1636033582.1682966548&semt=ais"className=' img-fluid'style={{height:"300px",width:"300px"}}data-aos="zoom-in" alt="toys" />   
                 </div>
                 <div className='col  h-100 my-2'>
-                <img src="https://img.freepik.com/free-vector/illustration-different-kind-toys_1308-2216.jpg?w=996&t=st=1684560622~exp=1684561222~hmac=c20273eddea2fa6d71c5f0df6e8b3c289345ff084a15fe68f7f73172095b4278"className=' img-fluid'style={{height:"300px",width:"300px"}} alt="toys" />   
+                <img src="https://img.freepik.com/free-vector/illustration-different-kind-toys_1308-2216.jpg?w=996&t=st=1684560622~exp=1684561222~hmac=c20273eddea2fa6d71c5f0df6e8b3c289345ff084a15fe68f7f73172095b4278"className=' img-fluid'style={{height:"300px",width:"300px"}}data-aos="zoom-in" alt="toys" />   
                 </div>
                 <div className='col  h-100 my-2'>
-                <img src="https://img.freepik.com/free-photo/colorful-car-toys_1194-2341.jpg?size=626&ext=jpg&ga=GA1.2.1636033582.1682966548&semt=ais"className=' img-fluid'style={{height:"300px",width:"300px"}} alt="toys" />   
+                <img src="https://img.freepik.com/free-photo/colorful-car-toys_1194-2341.jpg?size=626&ext=jpg&ga=GA1.2.1636033582.1682966548&semt=ais"className=' img-fluid'style={{height:"300px",width:"300px"}}data-aos="zoom-in" alt="toys" />   
                 </div>
                
                
@@ -126,13 +126,13 @@ const Home = () => {
 
 
 
-    <div className="row row-cols-1 row-cols-md-3 g-4"data-aos="fade-left"style={{marginTop:"70px"}}>
+    <div className="row row-cols-1 row-cols-md-3 g-4"data-aos="fade-right"style={{marginTop:"70px"}}>
   <div className="col">
     <div className="card h-100">
-      <img src="https://img.freepik.com/premium-photo/funny-illustrated-car-painted-rainbow-colors_183364-23794.jpg?size=626&ext=jpg&ga=GA1.2.1636033582.1682966548&semt=ais"style={{height:"200px"}} className="card-img-top" alt="cardimg"/>
+      <img src="https://img.freepik.com/premium-photo/funny-illustrated-car-painted-rainbow-colors_183364-23794.jpg?size=626&ext=jpg&ga=GA1.2.1636033582.1682966548&semt=ais"style={{height:"200px"}} className="card-img-top"alt="cardimg"/>
       <div className="card-body my-3">
         <h4 className="card-title text-center"style={{color:"hotpink"}}>Best Sellers</h4>
-        
+        <p className='card-text text-center'> Best sellers are products that have achieved high sales volume and popularity within a specific market or industry. </p>
       </div>
     </div>
   </div>
@@ -142,7 +142,7 @@ const Home = () => {
       <div className="card-body my-3">
         <h4 className="card-title text-center"style={{color:"hotpink"}}>Best Deal</h4>
      
-
+<p className='card-text text-center'>Best deal refers to a particularly advantageous or favorable offer or arrangement for a product or service.</p>
        
       </div>
     </div>
@@ -152,7 +152,7 @@ const Home = () => {
       <img src="https://img.freepik.com/free-vector/vector-yellow-dump-truck-unloading-side-view-illustration-isolated-white-background_8130-972.jpg?size=626&ext=jpg&ga=GA1.2.1636033582.1682966548&semt=sph"style={{height:"200px"}} className="card-img-top" alt="cardimg"/>
       <div className="card-body my-3">
         <h4 className="card-title text-center"style={{color:"hotpink"}}>New Arrival</h4>
-
+<p className='card-text text-center'>New arrival refers to a recently introduced or newly available product or item in a particular store, marketplace, or collection.</p>
       
       </div>
     </div>
@@ -162,7 +162,7 @@ const Home = () => {
       <img src="https://img.freepik.com/free-vector/hand-drawn-transport-truck_23-2149166246.jpg?size=626&ext=jpg&ga=GA1.1.1636033582.1682966548&semt=sph"style={{height:"200px"}} className="card-img-top" alt="cardimg"/>
       <div className="card-body my-3">
         <h4 className="card-title text-center"style={{color:"hotpink"}}>Featured</h4>
-
+<p className='card-text text-center'>A best feature refers to a standout attribute or characteristic of a product that sets it apart from others in its category. </p>
       </div>
     </div>
   </div>
