@@ -27,20 +27,14 @@ const getallvalues=(event)=>{
     const quantity=parseInt(event.target.quantity.value);
     const des=event.target.des.value;
 
+if((toyspik.length!== 0) && (toyname.length !== 0) && (sellername.length !== 0 )&&(Selleremail.length !== 0 )&&(subcategory.length!==0)&&(rating.length!==0)&&(price.length!==0)&&(quantity.length!==0)&&(des.length!==0)) {
+
 
     const user={
         toyspik,toyname,sellername,Selleremail,subcategory,rating,price,quantity,des
     }
     console.log(user);
-    event.target.toyspik.value="";
-    event.target.toyname.value="";
-    event.target.sellername.value="";
-    event.target.email.value="";
-    event.target.subcategory.value="";
-    event.target.rating.value="";
-    event.target.price.value="";
-    event.target.quantity.value="";
-    event.target.des.value="";
+   
     fetch('https://assignment-11-server-tasniasamia.vercel.app/AddToy',{
         method:"POST",
         headers:{
@@ -52,7 +46,16 @@ const getallvalues=(event)=>{
       toast("You have Added");
     }
     
-    })
+    })}
+    event.target.toyspik.value="";
+    event.target.toyname.value="";
+    event.target.sellername.value="";
+    event.target.email.value="";
+    event.target.subcategory.value="";
+    event.target.rating.value="";
+    event.target.price.value="";
+    event.target.quantity.value="";
+    event.target.des.value="";
 }
 
 
