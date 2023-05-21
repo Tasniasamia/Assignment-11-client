@@ -38,6 +38,7 @@
   
   button {
     border: none;
+
     
   }
   .content-tabs {
@@ -65,4 +66,7 @@
   }
   .active-content {
     display: block;
+  }
+  .card{
+    border:0px solid white;
   }

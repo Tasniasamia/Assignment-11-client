@@ -7,7 +7,6 @@ import Tabs from './Tab/Tab';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 // import { useEffect, useState } from 'react';
-
 const Home = () => {
     useTitle("Home");
     useEffect(() => {
@@ -178,16 +177,61 @@ const Home = () => {
 
 
 
+{/* shop by age */}
 
 
+<div className='container'style={{marginTop:"200px"}}>
+    <h1 className='text-center mb-5'><span className='me-2'style={{color:"hotpink"}}>Shop</span><span style={{color:"skyblue"}}className='me-2'>by</span><span style={{color:"hotpink"}}>Age</span> </h1>
+
+  <div className='row row-cols-1 row-cols-md-6 g-4'data-aos="fade-up" >
+  
+<div className='col text-center p-3'>
+<img src="https://cdn.shopify.com/s/files/1/1152/4590/files/category_img1.png?v=1676031096"className='img-fluid' alt="baby" />
+<h4 className='my-3'>For Baby</h4>
+</div>
+<div className='col text-center'>
+    <img src="https://cdn.shopify.com/s/files/1/1152/4590/files/category_img2.png?v=1676031123" className='img-fluid'alt="1years" />
+    <h4 className='my-3'>1 to 2 years</h4>
+</div>
+<div className='col text-center'>
+    <img src="https://cdn.shopify.com/s/files/1/1152/4590/files/category_img3.png?v=1676029617"className='img-fluid' alt="1years" />
+    <h4 className='my-3'>2 to 4 years</h4>
+</div>
+<div className='col text-center'>
+    <img src="https://cdn.shopify.com/s/files/1/1152/4590/files/category_img4.png?v=1676031270"className='img-fluid' alt="1years" />
+    <h4 className='my-3'>5 to 7 years</h4>
+</div>
+<div className='col text-center'>
+    <img src="https://cdn.shopify.com/s/files/1/1152/4590/files/category_img5.png?v=1676031270"className='img-fluid' alt="1years" />
+    <h4 className='my-3'>8 to 11 years</h4>
+</div>
+<div className='col text-center'>
+    <img src="https://cdn.shopify.com/s/files/1/1152/4590/files/category_img6.png?v=1676031270"className='img-fluid' alt="1years" />
+    <h4 className='my-3'>12 years up</h4>
+</div>
+  </div>
+</div>
 
 
+<div className='container'style={{marginTop:"200px"}}>
+    <h1 className='text-center mb-5'><span className='me-2'style={{color:"hotpink"}}>Online</span><span style={{color:"skyblue"}}>Partners</span> </h1>
 
+  <div className='row row-cols-1 row-cols-md-4 g-4'data-aos="fade-left" >
+<div className='col text-center'>
+<img src="https://cdn.shopify.com/s/files/1/1152/4590/files/logo1_compact.png?v=1676127525"className='img-fluid my-3' alt="logo" />
+</div>
+<div className='col text-center'>
+<img src="https://cdn.shopify.com/s/files/1/1152/4590/files/logo2_compact.png?v=1676127525"className='img-fluid my-3' alt="logo" />
+</div>
+<div className='col text-center'>
+<img src="https://cdn.shopify.com/s/files/1/1152/4590/files/logo3_compact.png?v=1676127524"className='img-fluid my-3' alt="logo" />
+</div>
 
-         
-
-
-
+<div className='col text-center'>
+<img src="https://cdn.shopify.com/s/files/1/1152/4590/files/logo5_compact.png?v=1676127524"className='img-fluid my-3' alt="logo" />
+</div>
+</div>
+</div>
 
             </div>
      

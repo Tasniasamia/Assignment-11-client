@@ -47,6 +47,8 @@ if((toyspik.length!== 0) && (toyname.length !== 0) && (sellername.length !== 0 )
     }
     
     })}
+
+    
     event.target.toyspik.value="";
     event.target.toyname.value="";
     event.target.sellername.value="";

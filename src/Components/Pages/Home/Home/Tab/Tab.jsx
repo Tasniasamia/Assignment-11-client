@@ -6,6 +6,8 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import Rating from 'react-rating';
+import {AiFillStar,AiOutlineStar} from "react-icons/ai";
 import { authdata } from "../../../Shared/Authprovider/Authprovider";
 function Tabs() {
     const navigate=useNavigation();
@@ -83,10 +85,19 @@ if(navigate.state=="loading"){
         <div className="text-center p-md-5 py-3">
       <img src={index.picture} className="card-img-top "style={{height:"200px"}} alt="car"/></div>
       <div className="card-body">
-        <h5 className="card-title"style={{color:"hotpink"}}>{index.name}</h5>
-       <div><span className="me-2"style={{fontSize:"20px",fontWeight:"bold"}}>Price</span>:<span>{index.price}</span></div>
-       <div><span className="me-2"style={{fontSize:"20px",fontWeight:"bold"}}>Rating</span>:<span>{index.rating}</span></div>
-       <button className="btn text-white mt-4"style={{background:"hotpink"}}onClick={toastfunction}>
+        <h5 className="card-title">{index.name}</h5>
+       <div className="my-3"><span style={{fontSize:"20px",fontWeight:"bold"}}>$</span><span>{index.price}</span></div>
+       <div> <Rating
+  // eslint-disable-next-line react/prop-types
+  placeholderRating={index.rating}
+  readonly
+  emptySymbol={<AiOutlineStar/>}
+  placeholderSymbol={<AiFillStar/>}
+  fullSymbol={<AiFillStar/>}
+// eslint-disable-next-line react/prop-types
+className='me-2'
+/> {index.rating}</div>
+       <button className="btn text-white mt-4"style={{background:"skyblue"}}onClick={toastfunction}>
         <Link to={`/subcategory/${index._id}`}className="text-decoration-none text-white">View Details</Link> </button>
 
       </div>
