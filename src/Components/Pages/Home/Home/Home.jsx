@@ -87,7 +87,7 @@ const Home = () => {
 
 <div className='container'style={{marginTop:"200px"}}>
     <h1 className='text-center'><span className='me-2'style={{color:"hotpink"}}>Our</span><span style={{color:"skyblue"}}>Gallery</span> </h1>
-                 <div className='row row-cols-1 row-cols-md-3 p-5 text-white  'data-aos="fade-left">
+                 <div className='row row-cols-1 row-cols-md-3 p-5 text-white  'data-aos="fade-left"   data-aos-duration="1000">
                 <div className='col  h-100 my-2'>
                 <img src="https://img.freepik.com/premium-vector/set-cartoon-car-vector-illustrations_491934-709.jpg?size=626&ext=jpg&ga=GA1.1.1636033582.1682966548&semt=ais"className=' img-fluid'style={{height:"300px",width:"300px"}}data-aos="zoom-in" alt="toys" />
                 </div>
@@ -126,7 +126,7 @@ const Home = () => {
 
 
 
-    <div className="row row-cols-1 row-cols-md-4 g-4"data-aos="fade-up"style={{marginTop:"70px"}}>
+    <div className="row row-cols-1 row-cols-md-4 g-4"data-aos="fade-up"data-aos-duration="1000"style={{marginTop:"70px"}}>
   <div className="col">
     <div className="card h-100">
       <img src="https://img.freepik.com/premium-photo/funny-illustrated-car-painted-rainbow-colors_183364-23794.jpg?size=626&ext=jpg&ga=GA1.2.1636033582.1682966548&semt=ais"style={{height:"200px"}} className="card-img-top"alt="cardimg"/>

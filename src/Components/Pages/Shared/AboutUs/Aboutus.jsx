@@ -8,7 +8,7 @@ const Aboutus = () => {
     return (
         <div>
          <div className='d-flex justify-content-center align-items-center'>
-<div className='row my-5 d-flex justify-content-center align-items-center' data-aos="fade-up">
+<div className='row my-5 d-flex justify-content-center align-items-center' data-aos="fade-up"   data-aos-duration="1000">
     <div className='col-md-5'>
         <img src="https://img.freepik.com/premium-photo/children-play-designer-table_199620-3537.jpg?size=626&ext=jpg&ga=GA1.1.1636033582.1682966548&semt=ais" alt="food-photo"className='img-fluid rounded' />
     </div>
