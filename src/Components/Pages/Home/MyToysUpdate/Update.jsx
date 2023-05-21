@@ -76,7 +76,7 @@ if(navigate.state=="loading"){
 
 <div className="mb-3 col">
   <label htmlFor="exampleInputPrice1" className="form-label"style={{color:"hotpink"}}>Price</label>
-  <input type="text" className="form-control"name="price" id="exampleInputPrice1" aria-describedby="priceHelp"required/>
+  <input type="text" className="form-control"name="price" id="exampleInputPrice1" aria-describedby="priceHelp"defaultValue={loaddata.price}/>
 </div>
 
 
@@ -85,12 +85,12 @@ if(navigate.state=="loading"){
 
 <div className="mb-3 col">
   <label htmlFor="exampleInputquantity1" className="form-label"style={{color:"hotpink"}}>Available Quantity</label>
-  <input type="text" className="form-control"name="quantity" id="exampleInputQuantity1" aria-describedby="quantityHelp"required/>
+  <input type="text" className="form-control"name="quantity" id="exampleInputQuantity1" aria-describedby="quantityHelp"defaultValue={loaddata.quantity}/>
 </div>
 
  <div className="mb-3 col">
   <label htmlFor="exampleInputDesc1" className="form-label"style={{color:"hotpink"}}>Details Description</label><br/>
-  <textarea name="des" id="des" cols="88" rows="5"style={{border:"1px solid gray"}}className='p-3'placeholder='Enter Describtion 'required></textarea>
+  <textarea name="des" id="des" cols="88" rows="5"style={{border:"1px solid gray"}}className='p-3'placeholder='Enter Describtion 'defaultValue={loaddata.des}></textarea>
 
 </div>
 
